@@ -1,0 +1,29 @@
+#!name=去除 keep 广告
+#!desc=可能需要重新安装Keep
+#!openUrl = 
+#!author = Maasea
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Loon.png
+#!date = 2024-01-24 13:20:06
+
+
+[Rule]
+DOMAIN, httpdns.calorietech.com, REJECT
+
+[Rewrite]
+^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v1\/ad reject-dict
+^https:\/\/api\.gotokeep\.com\/anno\/v1\/upgrade\/check$ reject-dict
+^https?:\/\/api.gotokeep.com/cauchy/growth/init reject-dict
+^https:\/\/api\.gotokeep\.com\/training\/box\/config reject-dict
+^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/tool\/v1\/jump\/popup$ reject-dict
+# 动态相册
+^https:\/\/api\.gotokeep\.com\/athena\/v1\/people\/my\/entry reject-dict
+
+[Script]
+http-response https:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/my.js, requires-body = true, tag = 我的页面精简
+http-response https:\/\/api\.gotokeep\.com\/config\/v3/basic script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/basic.js, requires-body = true, tag = Basic精简
+http-response https:\/\/kad\.gotokeep\.com\/op-engine-webapp\/v1\/ad script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/kad.js, requires-body = true, tag = 去广告
+http-response ^https?:\/\/api\.gotokeep\.com\/athena\/v7\/people\/course\/(practiced|general) script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/course.js, requires-body = true, tag = 课程页面
+
+[Mitm]
+hostname = api.gotokeep.com, kad.gotokeep.com
