@@ -195,9 +195,6 @@ https://b.appsimg.com/upload/momin/ reject
 ^https:\/\/api\.douban\.com\/v2\/app_ads\/splash reject
 ^https:\/\/api\.douban\.com\b.*\/common_ads\? reject
 
-# 最右
-^http:\/\/mercury-gateway\.ixiaochuan\.cn\/mercury\/v1\/ad\/ reject
-
 # 米家
 ^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|carousel\/banners|myTab|openingBanner) reject-dict
 ^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|myTab)\? reject-dict
@@ -238,28 +235,6 @@ https://b.appsimg.com/upload/momin/ reject
 # 猫耳FM - 开屏广告 app.missevan.com
 ^https:\/\/app\.missevan\.com\/site\/launch\? reject
 
-# 航旅纵横 @Dragon
-# 首页悬浮标签
-^http:\/\/home\.umetrip\.com\/gateway\/api\/umetrip\/native reject
-# 我的页面轮播图
-^http:\/\/umerp\.umetrip\.com\/gateway\/api\/umetrip\/native reject
-
-# 有道词典 @安妮
-# 翻译广告
-^https:\/\/dict\.youdao\.com\/course\/tab\/translateTab reject-dict
-# 听读训练
-^https:\/\/dict\.youdao\.com\/homepage\/tile reject-dict
-# 首次查词弹窗
-^https:\/\/api-overmind\.youdao\.com\/openapi\/get\/luna\/dict\/dict-mobile\/prod\/dictCommonConfig reject-dict
-# 首页弹窗
-^https:\/\/cdke\.youdao\.com\/course3\/recommend\/dict\/startup reject-dict
-# 搜索预想
-^https:\/\/dict\.youdao\.com\/commonsearch reject-dict
-# 会员优惠券弹窗
-^https:\/\/dict\.youdao\.com\/vip\/activity\/couponinfo reject-dict
-# 首页左上角福利中心
-^https:\/\/dict\.youdao\.com\/dictusertask\/system reject-dict
-
 # 中国移动 - 开屏广告 //client.app.coc.10086.cn
 ^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/init\/startInit reject
 ^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/explorePage\/getAdverList reject
@@ -279,4 +254,4 @@ http-response ^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\
 http-response ^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Remove_ads_by_keli/adsense.js, requires-body = true, tag = 移除广告联盟广告
 
 [Mitm]
-hostname = ptf.flyertrip.com, 47.100.65.202, www.flyert.com, m.ctrip.com, ma-adx.ctrip.com, mbd.baidu.com, b.appsimg.com, mapi.appvipshop.com, api.dangdang.com, *.pglstatp-toutiao.com, api.htp.ad-scope.com.cn, appgw.ddpai.com, init.sms.mob.com, api.douban.com, api-access.pangolin-sdk-toutiao.com, api.m.mi.com, *.huami.com, api.jr.mi.com, home.mi.com, shopapi.io.mi.com, api.pinduoduo.com, api.yangkeduo.com, gw.alicdn.com, acs.m.taobao.com, ccmsupport-sz.tenpay.com, m.qianbao.qq.com, app.missevan.com, mi.gdt.qq.com, open.e.kuaishou.com, home.umetrip.com, umerp.umetrip.com, dict.youdao.com, api-overmind.youdao.com, cdke.youdao.com, acs.m.taobao.com, guide-acs.m.taobao.com, gw.alicdn.com, heic.alicdn.com, client.app.coc.10086.cn, mercury-gateway.ixiaochuan.cn, iyes.youku.com, acs.m.goofish.com
+hostname = ptf.flyertrip.com, 47.100.65.202, www.flyert.com, m.ctrip.com, ma-adx.ctrip.com, mbd.baidu.com, b.appsimg.com, mapi.appvipshop.com, api.dangdang.com, *.pglstatp-toutiao.com, api.htp.ad-scope.com.cn, appgw.ddpai.com, init.sms.mob.com, api.douban.com, api-access.pangolin-sdk-toutiao.com, api.m.mi.com, *.huami.com, api.jr.mi.com, home.mi.com, shopapi.io.mi.com, api.pinduoduo.com, api.yangkeduo.com, gw.alicdn.com, acs.m.taobao.com, ccmsupport-sz.tenpay.com, m.qianbao.qq.com, app.missevan.com, mi.gdt.qq.com, open.e.kuaishou.com, acs.m.taobao.com, guide-acs.m.taobao.com, gw.alicdn.com, heic.alicdn.com, client.app.coc.10086.cn, iyes.youku.com, acs.m.goofish.com
