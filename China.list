@@ -120,4 +120,4 @@ DOMAIN-SUFFIX, mcjoker.xyz
 DOMAIN-SUFFIX, xuanshu.org
 DOMAIN-SUFFIX, beitai.cc
 # > GeoIP
-GEOIP, CN, no-resolve
+GEOIP, CN, Direct
