@@ -161,4 +161,4 @@ http-response ^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\
 http-response ^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Remove_ads_by_keli/adsense.js, requires-body = true, tag = 移除广告联盟广告
 
 [Mitm]
-hostname = ptf.flyertrip.com, 47.100.65.202, www.flyert.com, gab.122.gov.cn, m.ctrip.com, ma-adx.ctrip.com, mbd.baidu.com, api.dangdang.com, api.douban.com, home.mi.com, api.pinduoduo.com, api.yangkeduo.com, gw.alicdn.com, acs.m.taobao.com, iyes.youku.com, acs.m.goofish.com, client.app.coc.10086.cn, mi.gdt.qq.com, open.e.kuaishou.com, api-access.pangolin-sdk-toutiao.com,
+hostname = ptf.flyertrip.com, 47.100.65.202, www.flyert.com, gab.122.gov.cn, m.ctrip.com, ma-adx.ctrip.com, mbd.baidu.com, api.dangdang.com, api.douban.com, home.mi.com, api.pinduoduo.com, api.yangkeduo.com, gw.alicdn.com, acs.m.taobao.com, iyes.youku.com, acs.m.goofish.com, client.app.coc.10086.cn, mi.gdt.qq.com, open.e.kuaishou.com, api-access.pangolin-sdk-toutiao.com
