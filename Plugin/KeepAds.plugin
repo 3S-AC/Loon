@@ -11,11 +11,11 @@
 DOMAIN, httpdns.calorietech.com, REJECT
 
 [Rewrite]
-^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v1\/ad reject-dict
-^https:\/\/api\.gotokeep\.com\/anno\/v1\/upgrade\/check$ reject-dict
-^https?:\/\/api.gotokeep.com/cauchy/growth/init reject-dict
-^https:\/\/api\.gotokeep\.com\/training\/box\/config reject-dict
-^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/tool\/v1\/jump\/popup$ reject-dict
+^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v1\/ad reject
+^https:\/\/api\.gotokeep\.com\/anno\/v1\/upgrade\/check$ reject
+^https?:\/\/api.gotokeep.com/cauchy/growth/init reject
+^https:\/\/api\.gotokeep\.com\/training\/box\/config reject
+^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/tool\/v1\/jump\/popup$ reject
 # 动态相册
 ^https:\/\/api\.gotokeep\.com\/athena\/v1\/people\/my\/entry reject-dict
 
