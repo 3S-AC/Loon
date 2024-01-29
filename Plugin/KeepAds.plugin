@@ -17,7 +17,7 @@ DOMAIN, httpdns.calorietech.com, REJECT
 ^https:\/\/api\.gotokeep\.com\/training\/box\/config reject
 ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/tool\/v1\/jump\/popup$ reject
 # 动态相册
-^https:\/\/api\.gotokeep\.com\/athena\/v1\/people\/my\/entry reject-dict
+^https:\/\/api\.gotokeep\.com\/athena\/v1\/people\/my\/entry reject
 
 [Script]
 http-response https:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/my.js, requires-body = true, tag = 我的页面精简
