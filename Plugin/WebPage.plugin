@@ -9,6 +9,7 @@
 [Rewrite]
 # 谷歌重定向
 ^https?:\/\/(www.)?(g|google)\.cn 302 https://www.google.com
+^https?:\/\/(ditu|maps).google\.cn 302 https://maps.google.com
 
 [Script]
 
