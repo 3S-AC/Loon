@@ -7,6 +7,15 @@
 #!date = 2024-01-29
 
 [Rule]
+# 安全浏览限制解除
+DOMAIN, lookup.api.bsb.baidu.com, REJECT
+DOMAIN-SUFFIX, u3.ucweb.com, REJECT
+DOMAIN-KEYWORD, safebrowsing., REJECT
+
+# 百度
+DOMAIN, mobads.baidu.com, REJECT
+DOMAIN-SUFFIX, pos.baidu.com, REJECT
+
 # 字节跳动 - 广告服务商
 DOMAIN, ad.zijieapi.com, REJECT
 DOMAIN, i.snssdk.com, REJECT
@@ -47,6 +56,9 @@ DOMAIN, sdk.e.qq.com, REJECT
 
 # 天目 - 广告服务商
 DOMAIN, sdk.tianmu.mobi, REJECT
+
+# 数字联盟
+DOMAIN-SUFFIX, shuzilm.cn, REJECT
 
 # 阿里巴巴
 DOMAIN, ossgw.alicdn.com, REJECT
@@ -103,8 +115,6 @@ DOMAIN-SUFFIX, doubleclick.net, REJECT
 IP-CIDR, 120.240.95.37/32, REJECT
 
 [Rewrite]
-# 百度网盘
-^https?:\/\/pan\.baidu\.com\/(act\/(api\/activityentry|v2\/(bchannel|welfare)\/list)|rest\/2\.0\/pcs\/ad) reject
 
 # 永辉
 ^https?:\/\/api\.yonghuivip\.com\/web\/shensuan\/ad\/getAd url reject-200
@@ -169,14 +179,16 @@ IP-CIDR, 120.240.95.37/32, REJECT
 ^https:\/\/(client\.app\.coc|h\.app\.coc|app)\.10086\.cn\/biz-orange\/DN\/emotionMarket reject
 
 [Script]
+# 阿里系
+http-response ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch$ script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/header.js, tag = 移除阿里系广告
+
 # 飞客
 http-response ^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1 script-path = https://raw.githubusercontent.com/3S-AC/Script/main/feike.js, requires-body = true, tag = 移除飞客广告
 
 # 快手联盟、腾讯优量汇、字节跳动穿山甲
 http-response ^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Remove_ads_by_keli/adsense.js, requires-body = true, tag = 移除广告联盟广告
 
-# amdc
-http-response ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch$ script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/header.js, tag = 移除阿里系广告
-# 爱回收 
+# 12306
+http-response ^https:\/\/ad\.12306\.cn\/ad\/ser\/getAdList url script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/12306.js, requires-body = true, tag = 移除12306广告
 [Mitm]
-hostname = pan.baidu.com, acs.m.goofish.com, iyes.youku.com, acs.m.taobao.com, api.yonghuivip.com, appapi.huazhu.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, ptf.flyertrip.com, 47.100.65.202, www.flyert.com, m.ctrip.com, ma-adx.ctrip.com, mbd.baidu.com, api.dangdang.com, api.douban.com, home.mi.com, api.pinduoduo.com, api.yangkeduo.com, gw.alicdn.com, img.alicdn.com, client.app.coc.10086.cn, mi.gdt.qq.com, open.e.kuaishou.com, api-access.pangolin-sdk-toutiao.com
+hostname = ad.12306.cn, acs.m.goofish.com, iyes.youku.com, acs.m.taobao.com, api.yonghuivip.com, appapi.huazhu.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, ptf.flyertrip.com, 47.100.65.202, www.flyert.com, m.ctrip.com, ma-adx.ctrip.com, mbd.baidu.com, api.dangdang.com, api.douban.com, home.mi.com, api.pinduoduo.com, api.yangkeduo.com, gw.alicdn.com, img.alicdn.com, client.app.coc.10086.cn, mi.gdt.qq.com, open.e.kuaishou.com, api-access.pangolin-sdk-toutiao.com
