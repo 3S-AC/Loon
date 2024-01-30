@@ -1,0 +1,23 @@
+#!name = 谷歌百度网页
+#!desc = 网页净化
+#!author = Francis
+#!update = 2024-01-30 08:50
+#!homepage = https://github.com/3S-AC/Loon/new/main/Plugin
+#!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/plugin/amap.png
+
+[Rewrite]
+# 谷歌重定向
+^https?:\/\/(www.)?(g|google)\.cn 302 https://www.google.com
+
+[Script]
+
+# 百度网页
+## 百度防跳转
+http-response ^https:\/\/boxer\.baidu\.com\/scheme\?scheme script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/baiduNoRedirect.js, tag = 百度防跳转
+## 百度首页
+http-response ^https:\/\/(www|m)\.baidu\.com(\/|\/\?(tn=&)?from=\d+\w)?$ script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/webpage/baidu-index.js, requires-body = true, tag = 百度首页
+## 百度知道
+http-response ^https:\/\/zhidao\.baidu\.com\/(question|index|\?fr|\?word) script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/webpage/baidu-zhidao.js, requires-body = true, tag = 百度知道
+
+[Mitm]
+hostname = www.google.cn, www.g.cn, boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com
