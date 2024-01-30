@@ -149,7 +149,7 @@ IP-CIDR, 120.240.95.37/32, REJECT
 # 误杀少 解决阿里系的开屏 目前测试闲鱼/钉钉 感谢【zzzzzz】分享
 ^https:\/\/(gw|img)\.alicdn\.com\/imgextra\/.+\/[\w!]+\d+-\d+-.+-\b([8-9]\d{2,}|[1-9]\d{3,})\b-\b([5-9]\d{2,}|[1-9]\d{3,})\b reject-dict
 
-## 闲鱼 //acs.m.taobao.com
+## 闲鱼
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome reject
 
 # 中国移动 - 开屏广告 //client.app.coc.10086.cn
@@ -166,4 +166,4 @@ http-response ^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\
 http-response ^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Remove_ads_by_keli/adsense.js, requires-body = true, tag = 移除广告联盟广告
 
 [Mitm]
-hostname = acs.m.goofish.com, iyes.youku.com, api.yonghuivip.com, appapi.huazhu.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, ptf.flyertrip.com, 47.100.65.202, www.flyert.com, m.ctrip.com, ma-adx.ctrip.com, mbd.baidu.com, api.dangdang.com, api.douban.com, home.mi.com, api.pinduoduo.com, api.yangkeduo.com, gw.alicdn.com, img.alicdn.com, client.app.coc.10086.cn, mi.gdt.qq.com, open.e.kuaishou.com, api-access.pangolin-sdk-toutiao.com
+hostname = acs.m.taobao.com, api.yonghuivip.com, appapi.huazhu.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, ptf.flyertrip.com, 47.100.65.202, www.flyert.com, m.ctrip.com, ma-adx.ctrip.com, mbd.baidu.com, api.dangdang.com, api.douban.com, home.mi.com, api.pinduoduo.com, api.yangkeduo.com, gw.alicdn.com, img.alicdn.com, client.app.coc.10086.cn, mi.gdt.qq.com, open.e.kuaishou.com, api-access.pangolin-sdk-toutiao.com
