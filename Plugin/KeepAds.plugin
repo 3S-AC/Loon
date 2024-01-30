@@ -17,7 +17,6 @@ DOMAIN, httpdns.calorietech.com, REJECT
 ^https:\/\/api\.gotokeep\.com\/training\/box\/config reject
 ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/tool\/v1\/jump\/popup$ reject
 ^https?:\/\/api\.gotokeep\.com\/guide-webapp\/v\d\/popup\/getPopUp reject
-# 动态相册
 ^https:\/\/api\.gotokeep\.com\/athena\/v1\/people\/my\/entry reject
 
 [Script]
