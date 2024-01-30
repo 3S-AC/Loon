@@ -7,7 +7,7 @@
 #!date = 2024-01-25 18:03:14
 
 [Rule]
-IP-CIDR, 203.107.1.1/24, REJECT, no-resolve
+IP-CIDR, 203.107.1.1/24, REJECT
 
 [Rewrite]
 # 首页活动日历
