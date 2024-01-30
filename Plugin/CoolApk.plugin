@@ -2,9 +2,9 @@
 #!desc = 过滤酷安广告
 #!openUrl = 
 #!author = RuCu6
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/CoolApk.png
-#!date = 2023-11-15 17:20:55
+#!homepage = https://github.com/3S-AC/Loon
+#!icon = https://raw.githubusercontent.com/3S-AC/Loon/main/Icon/CoolApk.png
+#!date = 2024-01-29
 
 [Rewrite]
 ^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch reject-dict
