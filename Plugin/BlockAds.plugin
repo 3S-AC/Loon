@@ -61,10 +61,10 @@ DOMAIN, info6.video.qq.com, REJECT
 DOMAIN, ios.video.mpush.qq.com, REJECT
 DOMAIN, otheve.beacon.qq.com, REJECT
 DOMAIN, pgdt.gtimg.cn, REJECT
+DOMAIN, tmead.y.qq.com, REJECT-NO-DROP
+DOMAIN, tmeadbak.y.qq.com, REJECT
+DOMAIN, tmeadcomm.y.qq.com, REJECT
 DOMAIN, tpns.qq.com, REJECT
-DOMAIN, vv.video.qq.com, REJECT
-DOMAIN, vv6.video.qq.com, REJECT
-DOMAIN, up-hl.3g.qq.com, REJECT-NO-DROP
 DOMAIN-SUFFIX, gdt.qq.com, REJECT
 DOMAIN-SUFFIX, l.qq.com, REJECT
 DOMAIN-KEYWORD, trace.qq.com, REJECT
