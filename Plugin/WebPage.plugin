@@ -1,9 +1,10 @@
 #!name = 谷歌百度网页
 #!desc = 网页净化
+#!openUrl = 
 #!author = Francis
-#!update = 2024-01-30 08:50
-#!homepage = https://github.com/3S-AC/Loon/new/main/Plugin
-#!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/plugin/amap.png
+#!homepage = https://github.com/3S-AC/Loon
+#!icon = https://raw.githubusercontent.com/3S-AC/Loon/main/Icon/Google.png
+#!date = 2024-01-30
 
 [Rewrite]
 # 谷歌重定向
