@@ -166,10 +166,23 @@ IP-CIDR, 120.240.95.37/32, REJECT
 ^https:\/\/gw\.alicdn\.com\/tfs\/.+\d{3,4}-\d{4} reject
 ^https:\/\/gw\.alicdn\.com\/tps\/.+\d{3,4}-\d{4} reject
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome reject
-#闲鱼 - 开屏广告
+# 闲鱼 - 开屏广告
 ^https:\/\/iyes\.youku\.com\/uts\/v1\/start\/ reject-dict
 # 闲鱼 - 底部浮层发布球
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.user\.strategy\.get\/ reject-dict
+
+# 阿里巴巴 //acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.crm\.screen\.(allresource|predict) reject-dict
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv reject-dict
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimama\.etao\.config\.query\/.+?etao_advertise reject-dict
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimusic\.common\.mobileservice\.startinit reject-dict
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.etao\.noah\.query\/.+tao_splash reject-dict
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryadvertise reject-dict
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get reject-dict
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome reject-dict
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources reject-dict
+^https:\/\/heic\.alicdn\.com\/imgextra\/i\d\/\d*\/?[\w!]+-\d-(octopus|tps-1125-1602|tps-1080-1920)\.(jp|pn)g_(1\d{3}|9\d{2})x(1\d{3}|9\d{2})q[59]0 reject-dict
+^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(volvo\.secondfloor\.getconfig|wireless\.home\.newface\.awesome\.get) reject-dict
 
 
 # 中国移动 - 开屏广告 //client.app.coc.10086.cn
@@ -182,6 +195,10 @@ IP-CIDR, 120.240.95.37/32, REJECT
 # 阿里系
 http-response ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch$ script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/header.js, tag = 移除阿里系广告
 
+# 阿里巴巴
+http-response ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script//Taobao/Taobao_remove_ads.js, requires-body = true, tag = 移除淘宝开屏广告
+http-response ^https:\/\/poplayer\.template\.alibaba\.com\/\w+\.json script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script//Taobao/Taobao_remove_ads.js, requires-body = true, tag = 移除淘宝开屏广告
+
 # 飞客
 http-response ^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1 script-path = https://raw.githubusercontent.com/3S-AC/Script/main/feike.js, requires-body = true, tag = 移除飞客广告
 
@@ -191,4 +208,4 @@ http-response ^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\
 # 12306
 http-response ^https:\/\/ad\.12306\.cn\/ad\/ser\/getAdList url script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/12306.js, requires-body = true, tag = 移除12306广告
 [Mitm]
-hostname = ad.12306.cn, acs.m.goofish.com, iyes.youku.com, acs.m.taobao.com, api.yonghuivip.com, appapi.huazhu.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, ptf.flyertrip.com, 47.100.65.202, www.flyert.com, m.ctrip.com, ma-adx.ctrip.com, mbd.baidu.com, api.dangdang.com, api.douban.com, home.mi.com, api.pinduoduo.com, api.yangkeduo.com, gw.alicdn.com, img.alicdn.com, client.app.coc.10086.cn, mi.gdt.qq.com, open.e.kuaishou.com, api-access.pangolin-sdk-toutiao.com
+hostname = heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com, ad.12306.cn, acs.m.goofish.com, iyes.youku.com, acs.m.taobao.com, api.yonghuivip.com, appapi.huazhu.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, ptf.flyertrip.com, 47.100.65.202, www.flyert.com, m.ctrip.com, ma-adx.ctrip.com, mbd.baidu.com, api.dangdang.com, api.douban.com, home.mi.com, api.pinduoduo.com, api.yangkeduo.com, gw.alicdn.com, img.alicdn.com, client.app.coc.10086.cn, mi.gdt.qq.com, open.e.kuaishou.com, api-access.pangolin-sdk-toutiao.com
