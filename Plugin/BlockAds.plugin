@@ -130,13 +130,6 @@ IP-CIDR, 120.240.95.37/32, REJECT
 # 华住会
 ^https?:\/\/appapi\.huazhu\.com:\d{4}\/client\/app\/getAppStartPage\/ url reject
 
-# 饿了么
-^https:\/\/elemecdn.com\/.+\/sitemap reject
-^https:\/\/fuss10.elemecdn.com\/.+\/w\/640\/h\/\d{3,4} reject
-^https:\/\/fuss10.elemecdn.com\/.+\/w\/750\/h\/\d{3,4} reject
-^https:\/\/fuss10.elemecdn.com\/.+\.mp4 reject
-^https:\/\/www1.elecfans.com\/www\/delivery reject
-
 # 飞客茶馆
 ^https?:\/\/ptf\.flyertrip\.com\/common\/cf\/.*.jpg reject-200
 ^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=advis reject
@@ -220,4 +213,4 @@ http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLay
 http-response ^https:\/\/ad\.12306\.cn\/ad\/ser\/getAdList script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/12306.js, requires-body = true, tag = 移除12306广告
 
 [Mitm]
-hostname = api.m.jd.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com, ad.12306.cn, acs.m.goofish.com, iyes.youku.com, acs.m.taobao.com, api.yonghuivip.com, appapi.huazhu.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, ptf.flyertrip.com, 47.100.65.202, www.flyert.com, m.ctrip.com, ma-adx.ctrip.com, mbd.baidu.com, api.dangdang.com, api.douban.com, home.mi.com, api.pinduoduo.com, api.yangkeduo.com, gw.alicdn.com, img.alicdn.com, client.app.coc.10086.cn, mi.gdt.qq.com, open.e.kuaishou.com, api-access.pangolin-sdk-toutiao.com
+hostname = api.m.jd.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com, ad.12306.cn, acs.m.goofish.com, iyes.youku.com, acs.m.taobao.com, api.yonghuivip.com, appapi.huazhu.com, ptf.flyertrip.com, 47.100.65.202, www.flyert.com, m.ctrip.com, ma-adx.ctrip.com, mbd.baidu.com, api.dangdang.com, api.douban.com, home.mi.com, api.pinduoduo.com, api.yangkeduo.com, gw.alicdn.com, img.alicdn.com, client.app.coc.10086.cn, mi.gdt.qq.com, open.e.kuaishou.com, api-access.pangolin-sdk-toutiao.com
