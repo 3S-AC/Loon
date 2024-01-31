@@ -264,10 +264,10 @@ http-response ^https:\/\/api\.coolapk\.com\/v6\/main\/(dataList|indexV8|init) sc
 http-response ^https:\/\/api\.coolapk\.com\/v6\/page\/dataList\? script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js, requires-body = true, tag = 移除酷安广告
 
 # Keep
-http-response https:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/my.js, requires-body = true, tag = 我的页面精简
-http-response https:\/\/api\.gotokeep\.com\/config\/v3/basic script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/basic.js, requires-body = true, tag = Basic精简
-http-response https:\/\/kad\.gotokeep\.com\/op-engine-webapp\/v1\/ad script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/kad.js, requires-body = true, tag = 去广告
-http-response ^https?:\/\/api\.gotokeep\.com\/athena\/v7\/people\/course\/(practiced|general) script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/course.js, requires-body = true, tag = 课程页面
+http-response https:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/my.js, requires-body = true, tag = Keep我的页面精简
+http-response https:\/\/api\.gotokeep\.com\/config\/v3/basic script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/basic.js, requires-body = true, tag = Keep页面Basic精简
+http-response https:\/\/kad\.gotokeep\.com\/op-engine-webapp\/v1\/ad script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/kad.js, requires-body = true, tag = 去Keep广告
+http-response ^https?:\/\/api\.gotokeep\.com\/athena\/v7\/people\/course\/(practiced|general) script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/course.js, requires-body = true, tag = Keep课程页面精简
 
 # 高德地图
 # 导航详情页 - 路线规划、地点详情页、搜索详情页、导航结束页
