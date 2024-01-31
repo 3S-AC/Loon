@@ -249,7 +249,6 @@ http-response ^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\
 http-response ^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?) script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/adsense.js, requires-body = true, tag = 移除广告联盟广告
 
 # 京东
-http-response ^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item) script-path = https://raw.githubusercontent.com/zwf234/rules/master/js/jd_price.js, requires-body = true, tag = 京东比价
 http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome) script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/jingdong.js, requires-body = true, tag = 移除京东广告
 
 # 12306
