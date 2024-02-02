@@ -2,9 +2,9 @@
 #!desc = 过滤微信公众号广告，解锁微信外部链接访问限制，跳过中间界面。
 #!openUrl = 
 #!author = RuCu6, zZPiglet
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Weixin.png
-#!date = 2023-09-08 13:48:55
+#!homepage = https://github.com/3S-AC/Loon
+#!icon = https://raw.githubusercontent.com/3S-AC/Loon/main/Icon/Weixin.png
+#!date = 2024-01-29
 
 [Rewrite]
 # 移除公众号中的推广内容 //mp.weixin.qq.com
