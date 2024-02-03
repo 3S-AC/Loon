@@ -85,6 +85,21 @@ DOMAIN-SUFFIX, lzizy.net
 DOMAIN-KEYWORD, cdnlz
 DOMAIN-KEYWORD, lz-cdn
 DOMAIN-KEYWORD, lzzy
+# > 玩偶哥哥
+DOMAIN-SUFFIX, wogg.xyz
+# > JOJO
+DOMAIN-SUFFIX, jiohub.top
+# > 在线之家
+DOMAIN-SUFFIX, zxzja.com
+DOMAIN-SUFFIX, zxzj.pro
+DOMAIN-SUFFIX, zxzjhd.com
+# > 低端影视
+DOMAIN-SUFFIX, ddys.pro
+DOMAIN-SUFFIX, ddys.mov
+# > 厂长资源
+DOMAIN-KEYWORD, czzy
+# > 哔嘀影视
+DOMAIN-KEYWORD, bdys
 
 # > Emby
 # LOS
