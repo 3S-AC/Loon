@@ -15,7 +15,8 @@
 
 # 百度网页
 ## 百度防跳转
-http-response ^https:\/\/boxer\.baidu\.com\/scheme\?scheme script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/baiduNoRedirect.js, tag = 百度防跳转
+# http-response ^https:\/\/boxer\.baidu\.com\/scheme\?scheme script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/baiduNoRedirect.js, tag = 百度防跳转
+http-response ^https:\/\/boxer\.baidu\.com\/scheme\?scheme script-path = https://raw.githubusercontent.com/app2smile/rules/master/js/baidu-no-redirect.js, timeout=10, tag=百度防跳转
 ## 百度首页
 http-response ^https:\/\/(www|m)\.baidu\.com(\/|\/\?(tn=&)?from=\d+\w)?$ script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/webpage/baidu-index.js, requires-body = true, tag = 百度首页
 ## 百度知道
