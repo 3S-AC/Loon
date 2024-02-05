@@ -12,6 +12,9 @@ DOMAIN, awaken.amap.com, REJECT
 DOMAIN, free-aos-cdn-image.amap.com, REJECT
 
 [Rewrite]
+# 阿里系
+http-response ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch$ script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/header.js, tag = 移除阿里系广告
+
 # 导航详情页 - 路线规划、地点详情页、搜索详情页、导航结束页
 ^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/card-service-(car-end|route-plan)\? reject-dict
 ^https:\/\/m5\.amap\.com\/ws\/shield\/search\/new_hotword\? reject-dict
