@@ -7,6 +7,13 @@
 #!date = 2024-01-29
 
 [Rule]
+
+# 工商银行 开屏广告
+DOMAIN, pageviewp.icbc.com.cn, REJECT
+
+# 建设银行
+DOMAIN-KEYWORD, adv.ccb.com, REJECT
+
 # 云闪付
 DOMAIN, ads.95516.com, REJECT
 DOMAIN, switch.cup.com.cn, REJECT
