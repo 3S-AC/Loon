@@ -4,9 +4,21 @@
 #!author = Francis
 #!homepage = https://github.com/3S-AC/Loon
 #!icon = https://raw.githubusercontent.com/3S-AC/Loon/main/Icon/ADBlock.png
-#!date = 2024-01-29
+#!date = 2024-02-07
 
 [Rule]
+# 什么值得买
+DOMAIN, aaid.uyunad.com, REJECT
+DOMAIN, acs4baichuan.m.taobao.com, REJECT
+DOMAIN, adashxgc.ut.taobao.com, REJECT
+DOMAIN, analytics-api.smzdm.com, REJECT
+DOMAIN, baichuan-sdk.alicdn.com, REJECT
+DOMAIN, dgstatic.jd.com, REJECT
+DOMAIN, msg.umengcloud.com, REJECT
+DOMAIN, sec.umeng.com, REJECT
+DOMAIN, ulogs.umeng.com, REJECT
+DOMAIN, ynuf.aliapp.org, REJECT
+
 
 # 工商银行 开屏广告
 DOMAIN, pageviewp.icbc.com.cn, REJECT
@@ -139,6 +151,8 @@ DOMAIN-SUFFIX, doubleclick.net, REJECT
 IP-CIDR, 120.240.95.37/32, REJECT
 
 [Rewrite]
+# 什么值得买好价页面弹窗
+^https:\/\/s3\.zdmimg\.com\/third\/index reject
 
 # 阿里云盘
 ^https:\/\/member\.alipan\.com\/v2\/activity\/sign_in_luckyBottle reject-dict
@@ -227,6 +241,16 @@ IP-CIDR, 120.240.95.37/32, REJECT
 ^https:\/\/api\.gotokeep\.com\/athena\/v1\/people\/my\/entry reject
 
 [Script]
+# 什么值得买
+http-response ^https:\/\/app-api\.smzdm\.com\/util\/loading script-path = https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Smzdm.js, requires-body = true, tag = 移除广告
+http-response ^https:\/\/haojia-api\.smzdm\.com\/home\/list script-path = https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Smzdm.js, requires-body = true, tag = 移除广告
+http-response ^https:\/\/app-api\.smzdm\.com\/util\/update script-path = https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Smzdm.js, requires-body = true, tag = 移除广告
+http-response ^https:\/\/homepage-api\.smzdm\.com\/v3\/home script-path = https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Smzdm.js, requires-body = true, tag = 移除广告
+http-response ^https:\/\/user-api\.smzdm\.com\/vip script-path = https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Smzdm.js, requires-body = true, tag = 移除广告
+http-response ^https:\/\/user-api\.smzdm\.com\/vip\/bottom_card_list script-path = https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Smzdm.js, requires-body = true, tag = 移除广告
+http-response ^https:\/\/article-api\.smzdm\.com\/publish\/get_bubble script-path = https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Smzdm.js, requires-body = true, tag = 移除广告
+http-response ^https:\/\/qianbao\.smzdm\.com\/v\d\/app\/home script-path = https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Smzdm.js, requires-body = true, tag = 移除广告
+
 # 阿里巴巴
 http-response ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get) script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js, requires-body = true, tag = 移除淘宝开屏广告
 http-response ^https:\/\/poplayer\.template\.alibaba\.com\/\w+\.json script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js, requires-body = true, tag = 移除淘宝开屏广告
@@ -259,4 +283,4 @@ http-response https:\/\/kad\.gotokeep\.com\/op-engine-webapp\/v1\/ad script-path
 http-response ^https?:\/\/api\.gotokeep\.com\/athena\/v7\/people\/course\/(practiced|general) script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/course.js, requires-body = true, tag = Keep课程页面精简
 
 [Mitm]
-hostname = api.gotokeep.com, kad.gotokeep.com, api.coolapk.com, api.alipan.com, member.alipan.com, api.m.jd.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com, ad.12306.cn, acs.m.goofish.com, iyes.youku.com, acs.m.taobao.com, api.yonghuivip.com, appapi.huazhu.com, ptf.flyertrip.com, 47.100.65.202, www.flyert.com, m.ctrip.com, ma-adx.ctrip.com, mbd.baidu.com, api.dangdang.com, api.douban.com, home.mi.com, api.pinduoduo.com, api.yangkeduo.com, gw.alicdn.com, img.alicdn.com, client.app.coc.10086.cn, mi.gdt.qq.com, open.e.kuaishou.com, api-access.pangolin-sdk-toutiao.com
+hostname = haojia-api.smzdm.com, homepage-api.smzdm.com, app-api.smzdm.com, user-api.smzdm.com, article-api.smzdm.com ,qianbao.smzdm.com, s3.zdmimg.com, api.gotokeep.com, kad.gotokeep.com, api.coolapk.com, api.alipan.com, member.alipan.com, api.m.jd.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com, ad.12306.cn, acs.m.goofish.com, iyes.youku.com, acs.m.taobao.com, api.yonghuivip.com, appapi.huazhu.com, ptf.flyertrip.com, 47.100.65.202, www.flyert.com, m.ctrip.com, ma-adx.ctrip.com, mbd.baidu.com, api.dangdang.com, api.douban.com, home.mi.com, api.pinduoduo.com, api.yangkeduo.com, gw.alicdn.com, img.alicdn.com, client.app.coc.10086.cn, mi.gdt.qq.com, open.e.kuaishou.com, api-access.pangolin-sdk-toutiao.com
