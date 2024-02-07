@@ -19,7 +19,6 @@ DOMAIN, sec.umeng.com, REJECT
 DOMAIN, ulogs.umeng.com, REJECT
 DOMAIN, ynuf.aliapp.org, REJECT
 
-
 # 工商银行 开屏广告
 DOMAIN, pageviewp.icbc.com.cn, REJECT
 
