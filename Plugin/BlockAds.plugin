@@ -7,7 +7,7 @@
 #!date = 2024-02-07
 
 [Rule]
-# 工商银行 开屏广告
+# 工商银行
 DOMAIN, pageviewp.icbc.com.cn, REJECT
 DOMAIN, image.mybank.icbc.com.cn, REJECT
 DOMAIN-SUFFIX, mall.icbc.com.cn, REJECT
@@ -146,6 +146,7 @@ IP-CIDR, 120.240.95.37/32, REJECT
 ^https:\/\/api\.alipan\.com\/adrive\/v1\/file\/getTopFolders reject-dict
 
 # 京东
+^http:\/\/\w{32}\.jddebug\.com\/diagnose\? reject
 ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(searchBoxWord|stationPullService|uniformRecommend[06]) reject-dict
 
 # 永辉
@@ -160,11 +161,8 @@ IP-CIDR, 120.240.95.37/32, REJECT
 ^https?:\/\/www\.flyert\.com\/source\/plugin\/mobile\/mobile\.php\?module=advis.* reject
 
 # 携程
-# 更新弹窗 APP降级8.40.0版本搭配去开屏广告规则，目前没有出现MITM失败等其他问题 自行添加主机名 m.ctrip.com
 ^https?:\/\/m\.ctrip\.com\/restapi\/soa2\/[0-9]{5}\/json\/getTimeZoneServerIpList\?__gw_os=IOS reject-200
-# 开屏去广告
 ^https:\/\/ma-adx\.ctrip\.com\/_ma\.gif reject
-# 8.47.0以上版本会有部分图片加载不出来
 ^https?:\/\/m\.ctrip\.com\/restapi\/soa2\/13916\/json\/tripAds reject-200
 ^https:\/\/mbd\.baidu\.com\/newspage\/api\/getmobads\?page\=landingshare reject
 
@@ -182,21 +180,18 @@ IP-CIDR, 120.240.95.37/32, REJECT
 # 拼多多
 ^https:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash reject
 
-# > 钉钉/闲鱼
-# 误杀少 解决阿里系的开屏 目前测试闲鱼/钉钉 感谢【zzzzzz】分享
+# 钉钉
 ^https:\/\/(gw|img)\.alicdn\.com\/imgextra\/.+\/[\w!]+\d+-\d+-.+-\b([8-9]\d{2,}|[1-9]\d{3,})\b-\b([5-9]\d{2,}|[1-9]\d{3,})\b reject-dict
 
-# 闲鱼 //gw.alicdn.com, acs.m.taobao.com
+# 闲鱼
 ^https:\/\/gw\.alicdn\.com\/mt\/ reject
 ^https:\/\/gw\.alicdn\.com\/tfs\/.+\d{3,4}-\d{4} reject
 ^https:\/\/gw\.alicdn\.com\/tps\/.+\d{3,4}-\d{4} reject
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome reject
-# 闲鱼 - 开屏广告
 ^https:\/\/iyes\.youku\.com\/uts\/v1\/start\/ reject-dict
-# 闲鱼 - 底部浮层发布球
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.user\.strategy\.get\/ reject-dict
 
-# 阿里巴巴 //acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com
+# 阿里巴巴
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.crm\.screen\.(allresource|predict) reject-dict
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv reject-dict
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimama\.etao\.config\.query\/.+?etao_advertise reject-dict
@@ -209,10 +204,9 @@ IP-CIDR, 120.240.95.37/32, REJECT
 ^https:\/\/heic\.alicdn\.com\/imgextra\/i\d\/\d*\/?[\w!]+-\d-(octopus|tps-1125-1602|tps-1080-1920)\.(jp|pn)g_(1\d{3}|9\d{2})x(1\d{3}|9\d{2})q[59]0 reject-dict
 ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(volvo\.secondfloor\.getconfig|wireless\.home\.newface\.awesome\.get) reject-dict
 
-# 中国移动 - 开屏广告 //client.app.coc.10086.cn
+# 中国移动
 ^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/init\/startInit reject
 ^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/explorePage\/getAdverList reject
-# 多个悬浮窗 感谢#热心网友分享
 ^https:\/\/(client\.app\.coc|h\.app\.coc|app)\.10086\.cn\/biz-orange\/DN\/emotionMarket reject
 
 # 酷安
@@ -235,9 +229,6 @@ http-response ^https:\/\/poplayer\.template\.alibaba\.com\/\w+\.json script-path
 # 飞客
 http-response ^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1 script-path = https://raw.githubusercontent.com/3S-AC/Script/main/feike.js, requires-body = true, tag = 移除飞客广告
 
-# 快手联盟、腾讯优量汇、字节跳动穿山甲
-http-response ^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?) script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/adsense.js, requires-body = true, tag = 移除广告联盟广告
-
 # 京东
 http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome) script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/jingdong.js, requires-body = true, tag = 移除京东广告
 
@@ -259,5 +250,8 @@ http-response https:\/\/api\.gotokeep\.com\/config\/v3/basic script-path = https
 http-response https:\/\/kad\.gotokeep\.com\/op-engine-webapp\/v1\/ad script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/kad.js, requires-body = true, tag = 去Keep广告
 http-response ^https?:\/\/api\.gotokeep\.com\/athena\/v7\/people\/course\/(practiced|general) script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/course.js, requires-body = true, tag = Keep课程页面精简
 
+# 快手联盟、腾讯优量汇、字节跳动穿山甲
+http-response ^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?) script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/adsense.js, requires-body = true, tag = 移除广告联盟广告
+
 [Mitm]
-hostname = haojia-api.smzdm.com, homepage-api.smzdm.com, app-api.smzdm.com, user-api.smzdm.com, article-api.smzdm.com ,qianbao.smzdm.com, s3.zdmimg.com, api.gotokeep.com, kad.gotokeep.com, api.coolapk.com, api.alipan.com, member.alipan.com, api.m.jd.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com, ad.12306.cn, acs.m.goofish.com, iyes.youku.com, acs.m.taobao.com, api.yonghuivip.com, appapi.huazhu.com, ptf.flyertrip.com, 47.100.65.202, www.flyert.com, m.ctrip.com, ma-adx.ctrip.com, mbd.baidu.com, api.dangdang.com, api.douban.com, home.mi.com, api.pinduoduo.com, api.yangkeduo.com, gw.alicdn.com, img.alicdn.com, client.app.coc.10086.cn, mi.gdt.qq.com, open.e.kuaishou.com, api-access.pangolin-sdk-toutiao.com
+hostname = api.gotokeep.com, kad.gotokeep.com, api.coolapk.com, api.alipan.com, member.alipan.com, api.m.jd.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com, ad.12306.cn, acs.m.goofish.com, iyes.youku.com, acs.m.taobao.com, api.yonghuivip.com, appapi.huazhu.com, ptf.flyertrip.com, 47.100.65.202, www.flyert.com, m.ctrip.com, ma-adx.ctrip.com, mbd.baidu.com, api.dangdang.com, api.douban.com, home.mi.com, api.pinduoduo.com, api.yangkeduo.com, gw.alicdn.com, img.alicdn.com, client.app.coc.10086.cn, mi.gdt.qq.com, open.e.kuaishou.com, api-access.pangolin-sdk-toutiao.com
