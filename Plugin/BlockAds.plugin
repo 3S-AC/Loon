@@ -21,6 +21,8 @@ DOMAIN, ynuf.aliapp.org, REJECT
 
 # 工商银行 开屏广告
 DOMAIN, pageviewp.icbc.com.cn, REJECT
+DOMAIN, image.mybank.icbc.com.cn, reject
+DOMAIN-SUFFIX, mall.icbc.com.cn, reject
 
 # 建设银行
 DOMAIN-KEYWORD, adv.ccb.com, REJECT
