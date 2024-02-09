@@ -2,6 +2,7 @@
 # 2022-11-30 21:11:38
 
 # LAN
+DOMAIN-SUFFIX, local
 IP-CIDR, 0.0.0.0/8, no-resolve
 IP-CIDR, 10.0.0.0/8, no-resolve
 IP-CIDR, 100.64.0.0/10, no-resolve
