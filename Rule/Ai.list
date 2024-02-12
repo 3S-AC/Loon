@@ -67,6 +67,8 @@ DOMAIN-SUFFIX, bingapistatistics.com
 DOMAIN-SUFFIX, bingsandbox.com
 DOMAIN-SUFFIX, bingvisualsearch.com
 DOMAIN-SUFFIX, bingworld.com
-# Gemini 2024-02-04 21:26:13
+# Gemini 2024-02-12 21:26:13
 DOMAIN, bard.google.com
+DOMAIN, gemini.google.com
 DOMAIN, generativelanguage.googleapis.com
+
