@@ -2,8 +2,8 @@
 #!desc = 去除各部广告，建议卸载知乎重新安装。
 #!openUrl = 
 #!author = RuCu6 blackmatrix7
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Zhihu.png
+#!homepage = https://github.com/3S-AC/Loon
+#!icon = https://raw.githubusercontent.com/3S-AC/Loon/main/Icon/Amap.png
 #!date = 2024-01-24 13:20:06
 
 [Rule]
