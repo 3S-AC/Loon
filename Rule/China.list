@@ -104,6 +104,7 @@ DOMAIN-KEYWORD, bdys
 # > Emby
 # LOS
 DOMAIN-SUFFIX, xmsl.org
+DOMAIN-SUFFIX, loseremby.org
 IP-CIDR, 193.122.114.77/32, no-resolve
 # ZPR
 DOMAIN-SUFFIX, embyplus.org
