@@ -139,6 +139,13 @@ DOMAIN-SUFFIX, doubleclick.net, REJECT
 # 中国移动
 IP-CIDR, 120.240.95.37/32, REJECT
 
+# Foreca & Google
+DOMAIN, pagead2.googlesyndication.com, REJECT
+DOMAIN, www.googleadservices.com, REJECT
+DOMAIN-SUFFIX, adservice.google.com, REJECT
+DOMAIN-KEYWORD, adservice.google.com, REJECT
+DOMAIN-KEYWORD, ads.g.doubleclick, REJECT
+
 [Rewrite]
 
 # 阿里云盘
