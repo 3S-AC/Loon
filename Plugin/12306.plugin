@@ -13,7 +13,7 @@ DOMAIN, ad.12306.cn, DIRECT
 ^https:\/\/mobile\.12306\.cn\/otsmobile\/h5\/otsbussiness\/travelPageImg\/ reject
 [Script]
 # 移除12306开屏广告
-http-response ^https:\/\/ad\.12306\.cn\/ad\/ser\/getAdList script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/12306/12306_remove_ads.js, requires-body = true, tag = 移除12306开屏
+http-request ^https:\/\/ad\.12306\.cn\/ad\/ser\/getAdList script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/12306/12306_remove_ads.js, requires-body = true, tag = 移除12306开屏
 # 移除12306广告
 http-response ^https:\/\/mobile\.12306\.cn\/otsmobile\/ script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/header.js, tag = 移除12306广告
 [Mitm]
