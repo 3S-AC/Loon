@@ -97,11 +97,6 @@ DOMAIN-KEYWORD, trace.qq.com, REJECT
 DOMAIN-KEYWORD, trace.video.qq.com, REJECT
 IP-CIDR, 47.110.187.87/32, REJECT
 
-# 手机QQ
-DOMAIN, adsmind.gdtimg.com, REJECT
-DOMAIN, pgdt.gtimg.cn, REJECT
-DOMAIN-SUFFIX, gdt.qq.com, REJECT
-
 # 百度
 DOMAIN, mobads.baidu.com, REJECT
 DOMAIN-SUFFIX, pos.baidu.com, REJECT
