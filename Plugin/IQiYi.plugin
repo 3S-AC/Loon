@@ -1,14 +1,22 @@
-#!name = 爱奇艺净化
+#!name = 爱奇艺去广告
+#!desc = 过滤爱奇艺客户端广告
+#!openUrl = 
 #!author = 怎么肥事
-#!update = 2024-02-22 22:31
+#!homepage = https://github.com/3S-AC/Loon
+#!icon = https://raw.githubusercontent.com/3S-AC/Loon/main/Icon/YouKu.png
+#!date = 2024-02-22 22:16:2
 
+[Rewrite]
+https?:\/\/search\.video\.(?:iqiyi|qiyi)\.com\/qreject-dict
+^https:\/\/.+\.iqiyi\.com\/mixer reject-dict
+
+[Script]
 ^https:\/\/comment-card\.iqiyi\.com\/views_comment\/3\.0\/long_video_comments url script-response-body https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/iQIYI.js
 ^https:\/\/cards\.iqiyi\.com\/(waterfall|views_(search|category|home)\/3\.0\/(hot_query_search|category_home|feed|qy_home)|views_plt\/3\.0\/player_tabs_v2) url script-response-body https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/iQIYI.js
 ^https?:\/\/api\.iqiyi\.com\/3f4\/(cards\.iqiyi\.com\/views_search\/3\.0\/hot_query_search|iface2\.iqiyi\.com\/(views\/3\.0\/(home_top_menu|bottom_theme)|views_pop\/3\.0\/pop_home\/1|aggregate\/3\.0\/getMyMenus)) url script-response-body https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/iQIYI.js
 ^https:\/\/iface2\.iqiyi\.com\/aggregate\/3\.0\/getMyMenus url script-response-body https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/iQIYI.js
 ^https:\/\/iface2\.iqiyi\.com\/views\/3\.0\/(home_top_menu|bottom_theme) url script-response-body https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/iQIYI.js
 ^https:\/\/(?:api\.iqiyi\.com\/3f4\/)?iface2\.iqiyi\.com\/(?:aggregate|views_pop)\/\d\.\d\/(?:siri_suggest|pop_control) url reject-dict
-https?:\/\/search\.video\.(?:iqiyi|qiyi)\.com\/q url reject-dict
-^https:\/\/.+\.iqiyi\.com\/mixer url reject-dict
 
+[Mitm]
 hostname = -i.vip.iqiyi.com, *.iqiyi.com
