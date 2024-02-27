@@ -82,9 +82,8 @@ DOMAIN-SUFFIX, infuseku.xyz
 # > 量子资源
 DOMAIN-SUFFIX, lziapi.com
 DOMAIN-SUFFIX, lzizy.net
-DOMAIN-KEYWORD, vip.lz
-DOMAIN-KEYWORD, v.cdnlz
-DOMAIN-KEYWORD, hd.lz
+DOMAIN-KEYWORD, lz-cdn
+DOMAIN-KEYWORD, cdnlz
 DOMAIN-KEYWORD, lzzy
 # > 非凡资源
 DOMAIN-KEYWORD, vip.ffzy
