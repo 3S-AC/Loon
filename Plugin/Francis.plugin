@@ -6,11 +6,7 @@
 
 [Script]
 # 获取网易云音乐人签到需要的各项参数
-http-request ^https?:\/\/music\.163\.com\/weapi\/cloudbean\/records\/incomes script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/netease_musician/cookie.js, requires-body=true, timeout=60, tag=cookie
-http-request ^https:\/\/mvip.midea.cn\/next\/mucuserinfo\/getmucuserinfo script-path=https://gist.githubusercontent.com/Sliverkiss/3c0239a09cbe381c572a826a5caf5621/raw/midea.js, timeout=60, tag=midea
-
-# 获取慢慢买每日签到参数
-http-request ^https?:\/\/apph5\.manmanbuy\.com\/taolijin\/(login.aspx|logserver.aspx) script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/manmanbuy/manmanbuy_checkin.js, requires-body=true, timeout=60, tag=manmanbuy_checkin
+http-request ^https?:\/\/music\.163\.com\/weapi\/cloudbean\/records\/incomes script-path = https://raw.githubusercontent.com/leiyiyan/resource/main/script/netease_musician/cookie.js, timeout=60, tag = 网易云音乐获取Cookie
 
 # 获取爱奇艺签到需要的各项参数
 http-request ^https:\/\/passport\.iqiyi\.com\/apis\/user\/ script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js, timeout=60, tag=iQIYI
@@ -21,13 +17,12 @@ http-request ^https:\/\/game\.dominos\.com\.cn\/loong\/game\/gameDone script-pat
 # 获取建行生活签到需要的各项参数
 http-request ^https:\/\/yunbusiness\.ccb\.com\/(clp_coupon|clp_service)\/txCtrl\?txcode=(A3341A038|autoLogin) script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js, requires-body=true, timeout=60, tag=jhsh_checkIn
 
-# 使用方法2：美团APP -> 首页 -> 红包签到 -> 手动签到一次
-http-request ^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/ script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js, requires-body=true, timeout=60, tag=meituan.cookie
+# 获取B站各项参数
+http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(APP)
+http-request ^https?:\/\/m.bilibili.com/$ script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(网页)
 
-# 百度贴吧每日自动签到
-http-request ^https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.js, timeout=60, tag=tieba_signin
-http-request ^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/channelIconConfig script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.js, timeout=60, tag=tieba_signin
-http-request ^https?:\/\/tiebac\.baidu\.com\/c\/u\/follow\/getFoldedMessageUserInfo script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.js, timeout=60, tag=tieba_signin
+# 获取美团参：美团APP -> 首页 -> 红包签到 -> 手动签到一次
+http-request ^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/ script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js, requires-body=true, timeout=60, tag=meituan.cookie
 
 # 获取什么值得买任务需要的各项参数
 http-request ^https?:\/\/user-api\.smzdm\.com\/checkin$ script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_daily.js, timeout=60, tag=smzdm_daily
@@ -53,14 +48,11 @@ http-request https://api.tuhu.cn/User/GetInternalCenterInfo script-path=https://
 # 获取霸王茶姬签到需要的各项参数
 http-request ^https:\/\/(webapi|qmwebapi)\.qmai\.cn\/web\/(catering|catering2-apiserver)\/crm\/points-info script-path=https://gist.githubusercontent.com/Sliverkiss/4984f7f34d6df8bcdd1e13ecac4bba51/raw/bwcj.js, timeout=60, tag=bwcj
 
-# 获取天翼云盘签到需要的各项参数
-http-request ^https:\/\/api\.cloud\.189\.cn\/mkt\/userSign\.action? script-path=https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/ty.cookie.js, timeout=60, tag=ty.cookie
-
 # 获取高德地图签到需要的各项参数
 http-response ^https:\/\/(m5(|-zb)|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\/activity\/current)\/query|common\/(alipaymini|wxmini)\?_ENCRYPT=) script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, requires-body=true, timeout=60, tag=ampDache
 
-# 获取B站各项参数
-http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(APP)
+# 获取V2ex签到签到需要的各项参数
+http-request, ^https:\/\/www\.v2ex\.com\/b\/i\/ script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/task/v2ex.js, timeout=60, tag=bwcj
 
 [MITM]
-hostname = music.163.com, mvip.midea.cn, apph5.manmanbuy.com, app.hbooker.com, wx.10099.com.cn, api.weibo.cn, passport.iqiyi.com, apis.folidaymall.com, game.dominos.com.cn, yunbusiness.ccb.com, i.meituan.com, crm.nestlechinese.com, testflight.apple.com, sweixin.hisense.com, cps.hisense.com, c.tieba.baidu.com, tiebac.baidu.com, user-api.smzdm.com, auth.alipan.com, auth.aliyundrive.com, zxcstxt.com, api.hellobike.com, mall.meituan.com, sytgate.jslife.com.cn, hweb-personalcenter.huazhu.com, dm.yeemiao.com, api.tuhu.cn, qmwebapi.qmai.cn, webapi.qmai.cn, api.cloud.189.cn, api-ipv6.app.acfun.cn, *.acfun.cn, *.app.acfun.cn, h5.if.qidian.com, *.xbiao.com, miniapp.yaduo.com, yuchen.tonghuaios.com, ios.songshuyouxi.com, as.hypergryph.com, zonai.skland.com, bbs-api.mihoyo.com, api-takumi.mihoyo.com, example.com, *.amap.com, app.bilibili.com, m.bilibili.com
+hostname = music.163.com, passport.iqiyi.com, game.dominos.com.cn, yunbusiness.ccb.com, app.bilibili.com, m.bilibili.com, i.meituan.com, user-api.smzdm.com, auth.alipan.com, auth.aliyundrive.com, api.hellobike.com, mall.meituan.com, sytgate.jslife.com.cn, hweb-personalcenter.huazhu.com, api.tuhu.cn, qmwebapi.qmai.cn, webapi.qmai.cn, *.amap.com, www.v2ex.com 
