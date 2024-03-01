@@ -13,6 +13,7 @@ DOMAIN-SUFFIX, hotmail.com
 # > Office & OneDrive
 DOMAIN-SUFFIX, microsoft.com
 DOMAIN-SUFFIX, office.com
+DOMAIN-SUFFIX, office.net
 DOMAIN-SUFFIX, live.com
 DOMAIN-SUFFIX, live.net
 DOMAIN-KEYWORD, onedrive
