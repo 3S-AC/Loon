@@ -119,6 +119,8 @@ DOMAIN-SUFFIX, bili.rip
 IP-CIDR, 152.70.239.210/32, no-resolve
 # SHU
 DOMAIN-SUFFIX, mcjoker.xyz
+# TDG
+DOMAIN, 789.123456.al
 # > 小说
 DOMAIN-SUFFIX, xuanshu.org
 DOMAIN-SUFFIX, beitai.cc
