@@ -85,7 +85,7 @@ DOMAIN-SUFFIX, lziapi.com
 DOMAIN-KEYWORD, lz-cdn
 DOMAIN-KEYWORD, cdnlz
 # > 非凡资源
-DOMAIN-SUFFIX, ffzyapi.com
+#DOMAIN-SUFFIX, ffzyapi.com
 DOMAIN-KEYWORD, vip.ffzy
 # > 玩偶哥哥
 DOMAIN-SUFFIX, wogg.xyz
