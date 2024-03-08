@@ -80,6 +80,13 @@ DOMAIN-SUFFIX, totheglory.im
 # ---(XPTV)---
 # > Home
 DOMAIN-SUFFIX, infuseku.xyz
+# > 量子资源
+DOMAIN-SUFFIX, lziapi.com
+DOMAIN-KEYWORD, lz-cdn
+DOMAIN-KEYWORD, cdnlz
+# > 非凡资源
+DOMAIN-SUFFIX, ffzyapi.com
+DOMAIN-KEYWORD, vip.ffzy
 # > 玩偶哥哥
 DOMAIN-SUFFIX, wogg.xyz
 DOMAIN-SUFFIX, wogg.link
