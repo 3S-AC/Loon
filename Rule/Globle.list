@@ -495,3 +495,6 @@ HOST-KEYWORD, xn--
 # > PikPak
 DOMAIN-SUFFIX, mypikpak.com
 DOMAIN-KEYWORD, mypikpak
+# > Ffzy
+DOMAIN-SUFFIX, ffzyapi.com
+
