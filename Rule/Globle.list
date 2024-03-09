@@ -476,8 +476,8 @@ DOMAIN-SUFFIX, licdn.com
 DOMAIN-SUFFIX, msn.com
 DOMAIN-SUFFIX, skype.com
 # > Framagit
-DOMAIN-SUFFIX, framagit.com, PROXY
-DOMAIN-SUFFIX, framagit.org, PROXY
+DOMAIN-SUFFIX, framagit.com
+DOMAIN-SUFFIX, framagit.org
 # > Gitlab
 DOMAIN-SUFFIX, gitlab.com
 # > Quantumult X
@@ -491,7 +491,9 @@ DOMAIN-SUFFIX, stash.ws
 DOMAIN-SUFFIX, stash.wiki
 DOMAIN-SUFFIX, stash-activation.com
 # > Punycode
-HOST-KEYWORD, xn--, PROXY
+HOST-KEYWORD, xn--
 # > PikPak
-DOMAIN-SUFFIX, mypikpak.com, PROXY
-DOMAIN-KEYWORD, mypikpak, PROXY
+DOMAIN-SUFFIX, mypikpak.com
+DOMAIN-KEYWORD, mypikpak
+# > FFZY
+DOMAIN-SUFFIX, ffzyapi.com
