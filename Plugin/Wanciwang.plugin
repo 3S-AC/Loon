@@ -1,18 +1,24 @@
-[rewrite_local]
+#!name = 万词王去广告
+#!desc = 移除万词王去广告。
+#!openUrl = 
+#!author = Francis
+#!homepage = https://github.com/3S-AC/Loon
+#!icon = https://raw.githubusercontent.com/3S-AC/Loon/main/Icon/AliYunDrive.png
+#!date = 2024-03-09
+
+
+[Rewrite]
 //移除开屏
- ^https:\/\/wanciwangdata\.oss-cn-beijing\.aliyuncs\.com\/startup\/resource\/content.+ url reject
+ ^https:\/\/wanciwangdata\.oss-cn-beijing\.aliyuncs\.com\/startup\/resource\/content.+ reject
 
 //移除banner广告
-
-^https:\/\/recite\.perfectlingo\.com\/api\/recite\/app-act\/act-list.+ url reject-dict
+^https:\/\/recite\.perfectlingo\.com\/api\/recite\/app-act\/act-list.+ reject-dict
 
 //移除底部广告
+^https:\/\/recite\.perfectlingo\.com\/api\/recite\/content-recommend\/v1\/get-by-uid.+ reject-dict
 
-^https:\/\/recite\.perfectlingo\.com\/api\/recite\/content-recommend\/v1\/get-by-uid.+ url reject-dict
-
-移除悬浮广告
-
-^https:\/\/recite\.perfectlingo\.com\/api\/recite\/floating-window\/v1\/get-show.+ url reject-dict
+//移除悬浮广告
+^https:\/\/recite\.perfectlingo\.com\/api\/recite\/floating-window\/v1\/get-show.+ reject-dict
 
 [mitm]
 hostname = wanciwangdata.oss-cn-beijing.aliyuncs.com,recite.perfectlingo.com
