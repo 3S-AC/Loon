@@ -123,5 +123,7 @@ DOMAIN, 789.123456.al
 # > 小说
 DOMAIN-SUFFIX, xuanshu.org
 DOMAIN-SUFFIX, beitai.cc
+# > Trakt TV
+DOMAIN-SUFFIX, trakt.tv
 # > GeoIP
 GEOIP, CN, Direct
