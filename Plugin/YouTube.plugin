@@ -7,8 +7,8 @@
 #!date = 2024-02-12 11:42:17
 #!select = 屏蔽上传按钮,true,false
 #!select = 屏蔽选段按钮,true,false
-#!select = 字幕翻译语言:zh-Hans,off
-#!select = 歌词翻译语言:zh-Hans,off
+#!select = 字幕翻译语言:on,off
+#!select = 歌词翻译语言:on,off
 
 [Rewrite]
 # 使用reject-200方法以减少开销
