@@ -5,12 +5,11 @@
 #!homepage = https://github.com/3S-AC/Loon
 #!icon = https://raw.githubusercontent.com/3S-AC/Loon/main/Icon/NeteaseCloudMusic.png
 #!date = 2024-03-11
-#!select = 网易云音乐首页卡片数量,1,2,3,4,5
-#!select = TAB_漫游,不隐藏,隐藏
-#!select = TAB_动态,不隐藏,隐藏
-#!select = TAB_推荐,不隐藏,隐藏
-#!select = TAB_发现,不隐藏,隐藏
-
+#!select = 首页卡片数量, 1, 2, 3, 4, 5
+#!select = 隐藏漫游标签, 是, 否
+#!select = 隐藏动态标签, 是, 否
+#!select = 隐藏推荐标签, 是, 否
+#!select = 隐藏发现标签, 是, 否
 
 [Rule]
 DOMAIN, httpdns.music.163.com, REJECT
