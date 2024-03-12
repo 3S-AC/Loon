@@ -447,8 +447,6 @@ DOMAIN, wego.here.com
 DOMAIN-SUFFIX, go.dev
 DOMAIN-SUFFIX, golang.org
 # ---(Apple)---
-DOMAIN-SUFFIX, appsto.re
-DOMAIN-SUFFIX, smoot.apple.com
 DOMAIN, amp-api.podcasts.apple.com
 DOMAIN, beta.music.apple.com
 DOMAIN, books.itunes.apple.com
