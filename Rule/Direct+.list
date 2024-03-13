@@ -1,0 +1,82 @@
+# https://github.com/blackmatrix7/ios_rule_script/blob/release/rule/Loon/Lan/Lan.list
+# 2022-11-30 21:11:38
+
+# ---(Lan)---
+DOMAIN-SUFFIX, local
+IP-CIDR, 0.0.0.0/8, no-resolve
+IP-CIDR, 10.0.0.0/8, no-resolve
+IP-CIDR, 100.64.0.0/10, no-resolve
+IP-CIDR, 127.0.0.0/8, no-resolve
+IP-CIDR, 169.254.0.0/16, no-resolve
+IP-CIDR, 172.16.0.0/12, no-resolve
+IP-CIDR, 192.0.0.0/24, no-resolve
+IP-CIDR, 192.0.2.0/24, no-resolve
+IP-CIDR, 192.168.0.0/16, no-resolve
+IP-CIDR, 192.88.99.0/24, no-resolve
+IP-CIDR, 198.18.0.0/15, no-resolve
+IP-CIDR, 198.51.100.0/24, no-resolve
+IP-CIDR, 203.0.113.0/24, no-resolve
+IP-CIDR, 224.0.0.0/3, no-resolve
+IP-CIDR6, ::/127, no-resolve
+IP-CIDR6, fc00::/7, no-resolve
+IP-CIDR6, fe80::/10, no-resolve
+IP-CIDR6, ff00::/8, no-resolve
+# ---(Microsoft)---
+# > Outlook
+DOMAIN, outlook.office365.com
+DOMAIN, smtp-mail.outlook.com
+DOMAIN, smtp.office365.com
+DOMAIN-SUFFIX, hotmail.com
+# > Office & OneDrive
+DOMAIN-SUFFIX, microsoft.com
+DOMAIN-SUFFIX, office.com
+DOMAIN-SUFFIX, office.net
+DOMAIN-SUFFIX, live.com
+DOMAIN-SUFFIX, live.net
+DOMAIN-KEYWORD, onedrive
+DOMAIN-KEYWORD, 1drv
+# ---(XPTV)---
+# > Home
+DOMAIN-SUFFIX, infuseku.xyz
+# > 量子资源
+DOMAIN-SUFFIX, lziapi.com
+DOMAIN-KEYWORD, lz-cdn
+DOMAIN-KEYWORD, cdnlz
+# > 非凡资源
+DOMAIN-KEYWORD, vip.ffzy
+# > 玩偶哥哥
+DOMAIN-SUFFIX, wogg.xyz
+DOMAIN-SUFFIX, wogg.link
+# > JOJO
+DOMAIN-SUFFIX, jiohub.top
+# > 在线之家
+DOMAIN-SUFFIX, zxzja.com
+DOMAIN-SUFFIX, zxzj.pro
+DOMAIN-SUFFIX, zxzjhd.com
+# > 低端影视
+DOMAIN-SUFFIX, ddys.pro
+DOMAIN-SUFFIX, ddys.mov
+# > 厂长资源
+DOMAIN-KEYWORD, czzy
+# > 哔嘀影视
+DOMAIN-KEYWORD, bdys
+# ---(Emby)---
+# > LOS
+DOMAIN-SUFFIX, xmsl.org
+DOMAIN-SUFFIX, loseremby.org
+IP-CIDR, 193.122.114.77/32, no-resolve
+# > ZPR
+DOMAIN-SUFFIX, embyplus.org
+DOMAIN-SUFFIX, 9521732.xyz
+# > HXD
+DOMAIN-SUFFIX, bili.rip
+IP-CIDR, 152.70.239.210/32, no-resolve
+# > SHU
+DOMAIN-SUFFIX, mcjoker.xyz
+# > TDG
+DOMAIN, 789.123456.al
+# ---(Novel)---
+DOMAIN-SUFFIX, xuanshu.org
+DOMAIN-SUFFIX, beitai.cc
+# > Trakt TV
+DOMAIN-SUFFIX, trakt.tv
