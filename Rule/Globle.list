@@ -12,7 +12,7 @@ DOMAIN-SUFFIX,readdle.com
 DOMAIN-SUFFIX,gmail.com
 DOMAIN,sub.store
 DOMAIN-SUFFIX,gitlab.com
-# adobe
+# Adobe
 DOMAIN-SUFFIX,adobe.com
 DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,adobelogin.com
@@ -116,7 +116,7 @@ DOMAIN-SUFFIX,yammer.com
 DOMAIN-SUFFIX,yammerusercontent.com
 DOMAIN-KEYWORD,1drv
 DOMAIN-KEYWORD,microsoft
-# youtube
+# Youtube
 DOMAIN,yt3.ggpht.com
 DOMAIN-SUFFIX,gvt2.com
 DOMAIN-SUFFIX,withyoutube.com
@@ -129,7 +129,7 @@ DOMAIN-SUFFIX,youtubekids.com
 DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
 DOMAIN-KEYWORD,youtube
-# facebook
+# Facebook
 DOMAIN-SUFFIX,facebook.com
 DOMAIN-SUFFIX,fb.com
 DOMAIN-SUFFIX,fb.me
@@ -137,7 +137,7 @@ DOMAIN-SUFFIX,fbcdn.com
 DOMAIN-SUFFIX,fbcdn.net
 DOMAIN-KEYWORD,facebook
 DOMAIN-KEYWORD,fbcdn
-# testflight
+# Testflight
 DOMAIN,beta.apple.com
 DOMAIN,testflight.apple.com
 DOMAIN-KEYWORD,testflight
@@ -149,7 +149,7 @@ DOMAIN-SUFFIX,mapbox.com
 DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN-SUFFIX,nssurge.com
 DOMAIN-SUFFIX,cherpake.com
-# tiktok
+# Tiktok
 DOMAIN-SUFFIX,byteoversea.com
 DOMAIN-SUFFIX,ibytedtos.com
 DOMAIN-SUFFIX,ipstatp.com
@@ -160,7 +160,7 @@ DOMAIN-SUFFIX,tiktok.com
 DOMAIN-SUFFIX,tiktokcdn.com
 DOMAIN-SUFFIX,tiktokv.com
 DOMAIN-KEYWORD,tiktokcdn-
-# rss
+# Rss
 DOMAIN-SUFFIX,feedx.net
 DOMAIN-SUFFIX,rssfeed.today
 DOMAIN-SUFFIX,nicegram.app
@@ -170,7 +170,7 @@ DOMAIN-SUFFIX,misakaf.org
 DOMAIN-SUFFIX,poloemby.xyz
 DOMAIN-SUFFIX,emby.vip
 DOMAIN,xn--cnq51x.live
-# twitter
+# Twitter
 DOMAIN-SUFFIX,periscope.tv
 DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,t.co
