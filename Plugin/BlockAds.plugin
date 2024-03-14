@@ -19,9 +19,6 @@ DOMAIN, ads.95516.com, REJECT
 DOMAIN, switch.cup.com.cn, REJECT
 DOMAIN, tysdk.95516.com, REJECT
 
-# Keep
-DOMAIN, httpdns.calorietech.com, REJECT
-
 # 安全浏览限制解除
 DOMAIN, lookup.api.bsb.baidu.com, REJECT
 DOMAIN-SUFFIX, u3.ucweb.com, REJECT
@@ -155,11 +152,6 @@ DOMAIN-KEYWORD, ads.g.doubleclick, REJECT
 # 华住会
 ^https?:\/\/appapi\.huazhu\.com:\d{4}\/client\/app\/getAppStartPage\/ url reject
 
-# 飞客茶馆
-^https?:\/\/ptf\.flyertrip\.com\/common\/cf\/.*.jpg reject-200
-^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=advis reject
-^https?:\/\/www\.flyert\.com\/source\/plugin\/mobile\/mobile\.php\?module=advis.* reject
-
 # 携程
 ^https?:\/\/m\.ctrip\.com\/restapi\/soa2\/[0-9]{5}\/json\/getTimeZoneServerIpList\?__gw_os=IOS reject-200
 ^https:\/\/ma-adx\.ctrip\.com\/_ma\.gif reject
@@ -213,15 +205,6 @@ DOMAIN-KEYWORD, ads.g.doubleclick, REJECT
 # 酷安
 ^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch reject-dict
 
-# Keep
-^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v1\/ad reject
-^https:\/\/api\.gotokeep\.com\/anno\/v1\/upgrade\/check$ reject
-^https?:\/\/api.gotokeep.com/cauchy/growth/init reject
-^https:\/\/api\.gotokeep\.com\/training\/box\/config reject
-^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/tool\/v1\/jump\/popup$ reject
-^https?:\/\/api\.gotokeep\.com\/guide-webapp\/v\d\/popup\/getPopUp reject
-^https:\/\/api\.gotokeep\.com\/athena\/v1\/people\/my\/entry reject
-
 [Script]
 # 阿里系广告
 http-response ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch$ script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/header.js, tag = 移除阿里系广告
@@ -231,9 +214,6 @@ http-response ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvide
 http-response ^https:\/\/poplayer\.template\.alibaba\.com\/\w+\.json script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js, requires-body = true, tag = 移除阿里巴巴广告
 http-response ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cainiao.js, requires-body = true, tag = 移除阿里巴巴开屏广告
 
-# 飞客
-http-response ^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1 script-path = https://raw.githubusercontent.com/3S-AC/Script/main/feike.js, requires-body = true, tag = 移除飞客广告
-
 # 京东
 http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome) script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/jingdong.js, requires-body = true, tag = 移除京东
 
@@ -242,14 +222,8 @@ http-response ^https:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList)\? scrip
 http-response ^https:\/\/api\.coolapk\.com\/v6\/main\/(dataList|indexV8|init) script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js, requires-body = true, tag = 移除酷安广告
 http-response ^https:\/\/api\.coolapk\.com\/v6\/page\/dataList\? script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js, requires-body = true, tag = 移除酷安广告
 
-# Keep
-http-response https:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/my.js, requires-body = true, tag = Keep我的页面精简
-http-response https:\/\/api\.gotokeep\.com\/config\/v3/basic script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/basic.js, requires-body = true, tag = Keep页面Basic精简
-http-response https:\/\/kad\.gotokeep\.com\/op-engine-webapp\/v1\/ad script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/kad.js, requires-body = true, tag = 去Keep广告
-http-response ^https?:\/\/api\.gotokeep\.com\/athena\/v7\/people\/course\/(practiced|general) script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/course.js, requires-body = true, tag = Keep课程页面精简
-
 # 快手联盟、腾讯优量汇、字节跳动穿山甲
 http-response ^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?) script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/adsense.js, requires-body = true, tag = 移除广告联盟广告
 
 [Mitm]
-hostname = flowplus.meituan.net, img.meituan.net, s3plus.meituan.net, pan.baidu.com, api.gotokeep.com, kad.gotokeep.com, api.coolapk.com, api.m.jd.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com, acs.m.goofish.com, iyes.youku.com, acs.m.taobao.com, api.yonghuivip.com, appapi.huazhu.com, ptf.flyertrip.com, 47.100.65.202, www.flyert.com, m.ctrip.com, ma-adx.ctrip.com, mbd.baidu.com, api.dangdang.com, api.douban.com, home.mi.com, api.pinduoduo.com, api.yangkeduo.com, gw.alicdn.com, img.alicdn.com, client.app.coc.10086.cn, mi.gdt.qq.com, open.e.kuaishou.com, api-access.pangolin-sdk-toutiao.com
+hostname = flowplus.meituan.net, img.meituan.net, s3plus.meituan.net, pan.baidu.com, api.coolapk.com, api.m.jd.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com, acs.m.goofish.com, iyes.youku.com, acs.m.taobao.com, api.yonghuivip.com, appapi.huazhu.com, m.ctrip.com, ma-adx.ctrip.com, mbd.baidu.com, api.dangdang.com, api.douban.com, home.mi.com, api.pinduoduo.com, api.yangkeduo.com, gw.alicdn.com, img.alicdn.com, client.app.coc.10086.cn, mi.gdt.qq.com, open.e.kuaishou.com, api-access.pangolin-sdk-toutiao.com
