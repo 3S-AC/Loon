@@ -1,10 +1,11 @@
-#!name = Francis广告过滤
-#!desc = Francis自用广告过滤器
+#!name = 去飞客茶馆广告
+#!desc = 去飞客茶馆广告
 #!openUrl = 
 #!author = Francis
 #!homepage = https://github.com/3S-AC/Loon
-#!icon = https://raw.githubusercontent.com/3S-AC/Loon/main/Icon/ADBlock.png
-#!date = 2024-02-07
+#!icon = https://raw.githubusercontent.com/3S-AC/Loon/main/Icon/Flyert.png
+#!date = 2024-03-14
+
 [Rewrite]
 # 飞客茶馆
 ^https?:\/\/ptf\.flyertrip\.com\/common\/cf\/.*.jpg reject-200
