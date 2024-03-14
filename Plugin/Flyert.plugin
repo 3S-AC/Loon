@@ -1,0 +1,19 @@
+#!name = Francis广告过滤
+#!desc = Francis自用广告过滤器
+#!openUrl = 
+#!author = Francis
+#!homepage = https://github.com/3S-AC/Loon
+#!icon = https://raw.githubusercontent.com/3S-AC/Loon/main/Icon/ADBlock.png
+#!date = 2024-02-07
+[Rewrite]
+# 飞客茶馆
+^https?:\/\/ptf\.flyertrip\.com\/common\/cf\/.*.jpg reject-200
+^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=advis reject
+^https?:\/\/www\.flyert\.com\/source\/plugin\/mobile\/mobile\.php\?module=advis.* reject
+
+[Script]
+# 飞客
+http-response ^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1 script-path = https://raw.githubusercontent.com/3S-AC/Script/main/feike.js, requires-body = true, tag = 移除飞客广告
+
+[Mitm]
+hostname = ptf.flyertrip.com, 47.100.65.202, www.flyert.com,
