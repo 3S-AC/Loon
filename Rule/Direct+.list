@@ -80,3 +80,5 @@ DOMAIN-SUFFIX, xuanshu.org
 DOMAIN-SUFFIX, beitai.cc
 # > Trakt TV
 DOMAIN-SUFFIX, trakt.tv
+# > IPTV
+DOMAIN, live.fanmingming.com:80
