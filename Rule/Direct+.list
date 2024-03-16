@@ -83,4 +83,4 @@ DOMAIN-SUFFIX, trakt.tv
 # > IPTV
 DOMAIN, live.fanmingming.com
 # > Webpage
-DOMAIN, ahhhhfs.com
+DOMAIN-SUFFIX, ahhhhfs.com
