@@ -21,20 +21,6 @@ IP-CIDR6, ::/127, no-resolve
 IP-CIDR6, fc00::/7, no-resolve
 IP-CIDR6, fe80::/10, no-resolve
 IP-CIDR6, ff00::/8, no-resolve
-# ---(Microsoft)---
-# > Outlook
-DOMAIN, outlook.office365.com
-DOMAIN, smtp-mail.outlook.com
-DOMAIN, smtp.office365.com
-DOMAIN-SUFFIX, hotmail.com
-# > Office & OneDrive
-DOMAIN-SUFFIX, microsoft.com
-DOMAIN-SUFFIX, office.com
-DOMAIN-SUFFIX, office.net
-DOMAIN-SUFFIX, live.com
-DOMAIN-SUFFIX, live.net
-DOMAIN-KEYWORD, onedrive
-DOMAIN-KEYWORD, 1drv
 # ---(Apple)---
 DOMAIN-SUFFIX, aaplimg.com
 DOMAIN-SUFFIX, apple-cloudkit.com
@@ -69,8 +55,6 @@ IP-CIDR6, 2620:149:a44::/48, no-resolve
 IP-CIDR6, 2403:300:a42::/48, no-resolve
 IP-CIDR6, 2403:300:a51::/48, no-resolve
 IP-CIDR6, 2a01:b740:a42::/48, no-resolve
-
-
 # ---(XPTV)---
 # > Home
 DOMAIN-SUFFIX, infuseku.xyz
@@ -117,7 +101,9 @@ DOMAIN-SUFFIX, xuanshu.org
 DOMAIN-SUFFIX, beitai.cc
 # > Trakt TV
 DOMAIN-SUFFIX, trakt.tv
-# > IPTV
+# > APTV
 DOMAIN, live.fanmingming.com
+DOMAIN-SUFFIX,o.lencr.org
+DOMAIN-SUFFIX,epg.112114.xyz
 # > Webpage
 DOMAIN-SUFFIX, ahhhhfs.com
