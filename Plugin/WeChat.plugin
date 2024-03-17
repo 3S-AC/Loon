@@ -7,7 +7,7 @@
 #!date = 2024-01-29
 
 [Rewrite]
-# 移除公众号中的推广内容 //mp.weixin.qq.com
+# 移除公众号中的推广内容
 ^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|masonryfeed|relatedarticle)\? reject-dict
 
 [Script]
