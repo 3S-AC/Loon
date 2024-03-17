@@ -36,28 +36,28 @@ DOMAIN-SUFFIX, live.net
 DOMAIN-KEYWORD, onedrive
 DOMAIN-KEYWORD, 1drv
 # ---(Apple)---
-# > 苹果推送服务
-DOMAIN-SUFFIX, push.apple.com //推送通知
-DOMAIN, identity.apple.com //APNs 证书请求门户
-IP-CIDR, 17.249.0.0/16, no-resolve
-IP-CIDR, 17.252.0.0/16, no-resolve
-IP-CIDR, 17.57.144.0/22, no-resolve
-IP-CIDR, 17.188.128.0/18, no-resolve
-IP-CIDR, 17.188.20.0/23, no-resolve
-IP-CIDR6, 2620:149:a44::/48, no-resolve
-IP-CIDR6, 2403:300:a42::/48, no-resolve
-IP-CIDR6, 2403:300:a51::/48, no-resolve
-IP-CIDR6, 2a01:b740:a42::/48, no-resolve
-# > Apple ID
-DOMAIN, appleid.apple.com //“设置”和“系统偏好设置”中的 Apple ID 认证
-DOMAIN, appleid.cdn-apple.com //“设置”和“系统偏好设置”中的 Apple ID 认证
-DOMAIN, idmsa.apple.com //Apple ID 认证
-DOMAIN, gsa.apple.com //Apple ID 认证
-# > 苹果AppStore
-DOMAIN-SUFFIX, itunes.apple.com //商店内容，如 App、图书和音乐
-DOMAIN-SUFFIX, apps.apple.com //商店内容，如 App、图书和音乐
-DOMAIN-SUFFIX, mzstatic.com //商店内容，如 App、图书和音乐
-DOMAIN, ppq.apple.com //企业 App 验证
+DOMAIN-SUFFIX, aaplimg.com
+DOMAIN-SUFFIX, apple-cloudkit.com
+DOMAIN-SUFFIX, apple-livephotoskit.com
+DOMAIN-SUFFIX, apple-mapkit.com
+DOMAIN-SUFFIX, apple-support.akadns.net
+DOMAIN-SUFFIX, apple.co
+DOMAIN-SUFFIX, apple.com
+DOMAIN-SUFFIX, apple.com.akadns.net
+DOMAIN-SUFFIX, apple.com.cn
+DOMAIN-SUFFIX, apple.com.edgekey.net
+DOMAIN-SUFFIX, applemusic.com
+DOMAIN-SUFFIX, appstore.com
+DOMAIN-SUFFIX, apzones.com
+DOMAIN-SUFFIX, cdn-apple.com
+DOMAIN-SUFFIX, icloud-content.com
+DOMAIN-SUFFIX, icloud.com
+DOMAIN-SUFFIX, icloud.com.akadns.net
+DOMAIN-SUFFIX, icloud.com.cn
+DOMAIN-SUFFIX, itunes.com
+DOMAIN-SUFFIX, me.com
+DOMAIN-SUFFIX, mzstatic.com
+DOMAIN-SUFFIX, smoot.apple.cn
 
 # ---(XPTV)---
 # > Home
