@@ -1,7 +1,7 @@
 #!name = 微信公众号去广告
 #!desc = 过滤微信公众号广告，解锁微信外部链接访问限制，跳过中间界面。
 #!openUrl = 
-#!author = RuCu6, zZPiglet
+#!author = RuCu6
 #!homepage = https://github.com/3S-AC/Loon
 #!icon = https://raw.githubusercontent.com/3S-AC/Loon/main/Icon/Weixin.png
 #!date = 2024-01-29
@@ -11,6 +11,6 @@
 ^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|masonryfeed|relatedarticle)\? reject-dict
 
 [Script]
-http-response ^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\? script-path = https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js, requires-body = true, tag = 微信外部链接解锁
+http-response ^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi(\?.*)?$ script-path = https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/js/WeChat.response.js, requires-body = true, tag = 微信外部链接解锁
 
-hostname = mp.weixin.qq.com, weixin110.qq.com, security.wechat.com
+hostname = mp.weixin.qq.com, weixin110.qq.com
