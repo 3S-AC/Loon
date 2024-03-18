@@ -50,12 +50,6 @@ DOMAIN, self.events.data.microsoft.com
 DOMAIN, services.bingapis.com
 DOMAIN, shopping.bing-shopping.microsoft-falcon.io
 DOMAIN, sapphire.api.microsoftapp.net
-DOMAIN, sr.bing.com
-DOMAIN, sydney.bing.com
-DOMAIN, ssl.bing.com
-DOMAIN, th.bing.com
-DOMAIN, www.bing.com
-DOMAIN, www2.bing.com
 DOMAIN, www.bingapis.com
 DOMAIN-SUFFIX, edge.microsoft.com
 # BingAI 2024-02-04 21:29:04
