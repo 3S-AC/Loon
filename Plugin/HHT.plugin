@@ -6,7 +6,7 @@
 #!icon = https://raw.githubusercontent.com/3S-AC/Loon/main/Icon/HHT.png
 #!date = 2024-01-11 19:37:27
 
-[Rewrite]
+[Script]
 http-request https://api.cloud.alilo.com.cn/api/v4/user-activation/check-sowing script-path = https://raw.githubusercontent.com/Yu9191/Rewrite/main/Huohuotu/huohuotuid.js，requires-body = true, tag = 获取火火兔ID
 
 [Mitm]
