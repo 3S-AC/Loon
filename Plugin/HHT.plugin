@@ -1,0 +1,5 @@
+[Rewrite]
+https://api.cloud.alilo.com.cn/api/v4/user-activation/check-sowing url script-request-body https://raw.githubusercontent.com/Yu9191/Rewrite/main/Huohuotu/huohuotuid.js
+
+[Mitm]
+hostname = api.cloud.alilo.com.cn
