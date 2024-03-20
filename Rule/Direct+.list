@@ -100,6 +100,9 @@ DOMAIN-SUFFIX, ddys.mov
 DOMAIN-KEYWORD, czzy
 # > 哔嘀影视
 DOMAIN-KEYWORD, bdys
+# > 种子短剧
+DOMAIN-SUFFIX, zzdj.cc
+
 # ---(Emby)---
 # > LOS
 DOMAIN-SUFFIX, xmsl.org
