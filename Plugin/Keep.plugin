@@ -17,7 +17,7 @@ DOMAIN, httpdns.calorietech.com, REJECT
 ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/tool\/v1\/jump\/popup$ reject
 ^https?:\/\/api\.gotokeep\.com\/guide-webapp\/v\d\/popup\/getPopUp reject
 ^https:\/\/api\.gotokeep\.com\/athena\/v1\/people\/my\/entry reject
-
+^https?:\/\/hc-ssp\.sm\.cn reject-200
 [Script]
 http-response https:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/my.js, requires-body = true, tag = Keep我的页面精简
 http-response https:\/\/api\.gotokeep\.com\/config\/v3/basic script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/basic.js, requires-body = true, tag = Keep页面Basic精简
@@ -25,4 +25,4 @@ http-response https:\/\/kad\.gotokeep\.com\/op-engine-webapp\/v1\/ad script-path
 http-response ^https?:\/\/api\.gotokeep\.com\/athena\/v7\/people\/course\/(practiced|general) script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/course.js, requires-body = true, tag = Keep课程页面精简
 
 [Mitm]
-hostname = api.gotokeep.com, kad.gotokeep.com
+hostname = hc-ssp.sm.cn,api.gotokeep.com, kad.gotokeep.com
