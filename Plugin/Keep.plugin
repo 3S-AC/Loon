@@ -25,4 +25,4 @@ http-response https:\/\/kad\.gotokeep\.com\/op-engine-webapp\/v1\/ad script-path
 http-response ^https?:\/\/api\.gotokeep\.com\/athena\/v7\/people\/course\/(practiced|general) script-path = https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/course.js, requires-body = true, tag = Keep课程页面精简
 
 [Mitm]
-hostname = hc-ssp.sm.cn,api.gotokeep.com, kad.gotokeep.com
+hostname = hc-ssp.sm.cn, api.gotokeep.com, kad.gotokeep.com
