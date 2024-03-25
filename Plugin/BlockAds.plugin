@@ -17,7 +17,6 @@ DOMAIN-KEYWORD, adv.ccb.com, REJECT
 # 云闪付
 DOMAIN, ads.95516.com, REJECT
 DOMAIN, switch.cup.com.cn, REJECT
-DOMAIN, tysdk.95516.com, REJECT
 
 # 安全浏览限制解除
 DOMAIN, lookup.api.bsb.baidu.com, REJECT
