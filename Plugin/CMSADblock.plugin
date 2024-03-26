@@ -1,0 +1,9 @@
+#!name=去廣告｜CMS
+#!desc=去除海外看、量子資源插入式廣告
+
+[Script]
+http-response ^https?:\/\/m3u\.haiwaikan\.com\/xm3u8\/(.+).m3u8 script-path = https://raw.githubusercontent.com/Yswag/for-own-use/main/js/cmsAdblock.js, requires-body=1, tag = 海外看去广告
+http-response ^https?:\/\/(v\.cdnlz\d+\.com|vip.*\.lz-cdn\d+\.com)\/(.+)\/hls\/(.+).m3u8 script-path = https://raw.githubusercontent.com/Yswag/for-own-use/main/js/cmsAdblock.js, requires-body=1,tag = 量子资源去广告
+
+[MITM]
+hostname = m3u.haiwaikan.com, v.cdnlz*.com, vip*.lz-cdn*.com
