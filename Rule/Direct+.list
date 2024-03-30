@@ -86,6 +86,9 @@ DOMAIN-KEYWORD, vip.ffzy
 DOMAIN-KEYWORD, super.ffzy
 # > 快看资源
 DOMAIN-KEYWORD, vip.kuaikan
+DOMAIN-SUFFIX, kuaikanzy.net
+# > 暴风资源
+DOMAIN-KEYWORD, bfengbf.com
 # > 玩偶哥哥
 DOMAIN-SUFFIX, wogg.xyz
 DOMAIN-SUFFIX, wogg.link
