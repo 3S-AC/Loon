@@ -58,7 +58,6 @@ http-request ^https:\/\/www\.v2ex\.com\/b\/i\/ script-path=https://raw.githubuse
 http-request https\:\/\/h5\.if\.qidian\.com\/argus\/api\/v1\/video\/adv\/finishWatch script-path=https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/qidian/qidian.cookie.js, requires-body=true, timeout=60, tag=qidian.cookie
 http-response https\:\/\/h5\.if\.qidian\.com\/argus\/api\/v1\/video\/adv\/mainPage script-path=https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/qidian/qidian.taskId.js, requires-body=true, timeout=60, tag=qidian.taskId
 # 万达智慧商业
-http-response ^https?:\/\/www\.wandawic\.com\/api\/foreground\/loginregister\/queryUser script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/wdzhsy/wdzhsy.js, requires-body = ture, timeout=60, tag=万达智慧商业Cookie
-
+http-response ^https?:\/\/www\.wandawic\.com\/api\/foreground\/loginregister\/queryUser tag=万达智慧商业²,script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/wdzhsy/wdzhsy.js,requires-body=1
 [MITM]
 hostname = www.wandawic.com, h5.if.qidian.com, music.163.com, passport.iqiyi.com, game.dominos.com.cn, yunbusiness.ccb.com, app.bilibili.com, m.bilibili.com, i.meituan.com, user-api.smzdm.com, auth.alipan.com, auth.aliyundrive.com, api.hellobike.com, mall.meituan.com, sytgate.jslife.com.cn, hweb-personalcenter.huazhu.com, api.tuhu.cn, qmwebapi.qmai.cn, webapi.qmai.cn, *.amap.com, www.v2ex.com 
