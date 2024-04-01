@@ -100,15 +100,6 @@ DOMAIN, babel-statistics-android.d.meituan.net, REJECT
 DOMAIN, maplocatesdksnapshot.d.meituan.net, REJECT
 DOMAIN, metrics-picture.d.meituan.net, REJECT
 DOMAIN, route-stats.d.meituan.net, REJECT
-^https?:\/\/peisongapi\.meituan\.com\/client\/getInitiateImage url reject-200
-^https?:\/\/img\.meituan\.net\/(adunion|display|midas)\/\w+\.(gif|jpg|jpg\.webp)$ url reject-200
-^https?:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4) url reject-200
-^https?:\/\/p\d\.meituan\.net\/(bizad|wmbanner)\/\w+\.jpg url reject-200
-^https?:\/\/p\d\.meituan\.net\/movie\/\w+\.jpg\?may_covertWebp url reject-200
-# > MeiTuanWaiMai
-^https?:\/\/img\.meituan\.net\/(bizad|brandCpt)\/\w+\.(png|jpg) url reject-200
-^https?:\/\/.*\.meituan\.com\/api\/v\d\/(openscreen\?ad|appstatus\?ad|loadInfo\?|startpicture) url reject-200
-^http:\/\/s3plus\.meituan\.net\/.*\/brandcpt-vedio\/.*\?time url reject-200
 
 # 京东
 DOMAIN, dns.jd.com, REJECT
@@ -139,17 +130,13 @@ DOMAIN-SUFFIX, adservice.google.com, REJECT
 DOMAIN-KEYWORD, ads.g.doubleclick, REJECT
 
 [Rewrite]
-
 # 美团
+^http:\/\/wmapi\.meituan\.com\/api\/v7\/(loadInfo|openscreen|startpicture)\? url reject-dict
 ^https?:\/\/peisongapi\.meituan\.com\/client\/getInitiateImage reject-200
 ^https?:\/\/img\.meituan\.net\/(adunion|display|midas)\/\w+\.(gif|jpg|jpg\.webp)$ reject-200
 ^https?:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4) reject-200
 ^https?:\/\/p\d\.meituan\.net\/(bizad|wmbanner)\/\w+\.jpg reject-200
 ^https?:\/\/p\d\.meituan\.net\/movie\/\w+\.jpg\?may_covertWebp reject-200
-# 美团外卖
-^https?:\/\/img\.meituan\.net\/(bizad|brandCpt)\/\w+\.(png|jpg) reject-200
-^https?:\/\/.*\.meituan\.com\/api\/v\d\/(openscreen\?ad|appstatus\?ad|loadInfo\?|startpicture) reject-200
-^http:\/\/s3plus\.meituan\.net\/.*\/brandcpt-vedio\/.*\?time reject-200
 
 # 百度网盘
 ^https:\/\/pan\.baidu\.com\/(act\/api\/activityentry|act\/v2\/|rest\/2\.0\/pcs\/ad) reject-dict
@@ -233,4 +220,4 @@ http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLay
 http-response ^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?) script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/adsense.js, requires-body = true, tag = 移除广告联盟广告
 
 [Mitm]
-hostname = mobilepaas.abchina.com.cn, flowplus.meituan.net, img.meituan.net, s3plus.meituan.net, pan.baidu.com, api.m.jd.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com, acs.m.goofish.com, iyes.youku.com, acs.m.taobao.com, api.yonghuivip.com, appapi.huazhu.com, m.ctrip.com, ma-adx.ctrip.com, mbd.baidu.com, api.dangdang.com, api.douban.com, home.mi.com, api.pinduoduo.com, api.yangkeduo.com, gw.alicdn.com, img.alicdn.com, client.app.coc.10086.cn, mi.gdt.qq.com, open.e.kuaishou.com, api-access.pangolin-sdk-toutiao.com
+hostname = mobilepaas.abchina.com.cn, wmapi.meituan.com, peisongapi.meituan.com, p*.meituan.net, flowplus.meituan.net, img.meituan.net, s3plus.meituan.net, pan.baidu.com, api.m.jd.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com, acs.m.goofish.com, iyes.youku.com, acs.m.taobao.com, api.yonghuivip.com, appapi.huazhu.com, m.ctrip.com, ma-adx.ctrip.com, mbd.baidu.com, api.dangdang.com, api.douban.com, home.mi.com, api.pinduoduo.com, api.yangkeduo.com, gw.alicdn.com, img.alicdn.com, client.app.coc.10086.cn, mi.gdt.qq.com, open.e.kuaishou.com, api-access.pangolin-sdk-toutiao.com
