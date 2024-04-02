@@ -6,10 +6,6 @@
 #!icon = https://raw.githubusercontent.com/3S-AC/Loon/main/Icon/YouTube.png
 #!date = 2024-02-12 11:42:17
 
-[Rule]
-AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
-AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
-
 [Rewrite]
 # 使用reject-200方法以减少开销
 ^https?:\/\/redirector\.googlevideo\.com\/initplayback reject-200
