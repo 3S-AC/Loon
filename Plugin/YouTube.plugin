@@ -4,7 +4,7 @@
 #!author = Maasea VirgilClyne Choler DivineEngine app2smile
 #!homepage = https://github.com/3S-AC/Loon
 #!icon = https://raw.githubusercontent.com/3S-AC/Loon/main/Icon/YouTube.png
-#!date = 2024-04-05 21:26:17
+#!date = 2024-04-05 21:53:17
 #!select = 隐藏上传按钮, true, false
 #!select = 隐藏选段按钮, true, false
 #!select = 字幕翻译语言, zh-Hans, ja, ko, en
