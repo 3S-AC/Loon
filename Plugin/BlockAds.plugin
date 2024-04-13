@@ -7,12 +7,6 @@
 #!date = 2024-02-07
 
 [Rule]
-# 微信
-DOMAIN, finderks.video.qq.com, REJECT
-DOMAIN, finderv1.video.qq.com, REJECT
-DOMAIN, wxsnsdy.wxs.qq.com, REJECT
-DOMAIN, wxsnsdythumb.wxs.qq.com, REJECT
-
 # 百度网盘
 IP-CIDR, 180.76.76.112/32, REJECT
 IP-CIDR, 180.76.76.200/32, REJECT
@@ -206,10 +200,6 @@ DOMAIN-KEYWORD, ads.g.doubleclick, REJECT
 ^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/init\/startInit reject
 ^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/explorePage\/getAdverList reject
 ^https:\/\/(client\.app\.coc|h\.app\.coc|app)\.10086\.cn\/biz-orange\/DN\/emotionMarket reject
-
-# 微信
-^http:\/\/[\d\.]+(:49155)?\/finderpdd\.video\.qq\.com\/\d+\/\d+\/stodownload\? reject-dict
-^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|masonryfeed|relatedarticle)\? reject-dict
 
 [Script]
 # 阿里系广告
