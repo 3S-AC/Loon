@@ -121,7 +121,10 @@ DOMAIN-SUFFIX, agedm.org
 # ---(Emby)---
 # > LOS
 DOMAIN-SUFFIX, xmsl.org
-DOMAIN-SUFFIX, loseremby.org
+DOMAIN-KEYWORD, loseremby
+DOMAIN-SUFFIX, emby.moe
+DOMAIN-SUFFIX, enmm.org
+DOMAIN-SUFFIX, zckll.com
 IP-CIDR, 193.122.114.77/32, no-resolve
 # > ZPR
 DOMAIN-SUFFIX, embyplus.org
