@@ -12,8 +12,8 @@
 #!select = 启用调试模式, true, false
 # [Rule]
 # 启用QUIC回退保护即可
-# AND, ((DOMAIN-SUFFIX, googlevideo.com), (PROTOCOL,QUIC)), REJECT
-# AND, ((DOMAIN, youtubei.googleapis.com), (PROTOCOL,QUIC)), REJECT
+AND, ((DOMAIN-SUFFIX, googlevideo.com), (DEST-PORT,443), (PROTOCOL, UDP)), REJECT
+AND, ((DOMAIN, youtubei.googleapis.com), (DEST-PORT,443), (PROTOCOL, UDP)), REJECT
 [Rewrite]
 # 使用reject-dict方法以减少开销
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad reject-dict
