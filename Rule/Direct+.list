@@ -130,8 +130,8 @@ IP-CIDR, 193.122.114.77/32, no-resolve
 DOMAIN-SUFFIX, embyplus.org
 DOMAIN-SUFFIX, 9521732.xyz
 # > HXD
-DOMAIN-SUFFIX, bili.rip
-IP-CIDR, 152.70.239.210/32, no-resolve
+#DOMAIN-SUFFIX, bili.rip
+#IP-CIDR, 152.70.239.210/32, no-resolve
 # > SHU
 DOMAIN-SUFFIX, mcjoker.xyz
 # > TDG
