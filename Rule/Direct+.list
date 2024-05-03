@@ -6,6 +6,10 @@ DOMAIN-SUFFIX, ip6-localhost
 DOMAIN-SUFFIX, ip6-loopback
 DOMAIN-SUFFIX, localdomain
 DOMAIN-SUFFIX, localhost
+DOMAIN-SUFFIX, ibm.com
+DOMAIN-SUFFIX, plex.tv
+DOMAIN-SUFFIX, steamserver.net // 用于判断用户所在地区分配下载CDN的地址
+AND, ((GEOIP, CN), (DOMAIN, pitaya.bytedance.com)) // 此为抖音和TikTok共用域名，仅国外解析结果走代理
 IP-CIDR, 0.0.0.0/8, no-resolve
 IP-CIDR, 10.0.0.0/8, no-resolve
 IP-CIDR, 17.0.0.0/8, no-resolve
@@ -25,7 +29,10 @@ IP-CIDR6, ::1/128, no-resolve
 IP-CIDR6, fc00::/7, no-resolve
 IP-CIDR6, fe80::/10, no-resolve
 IP-CIDR6, ff00::/8, no-resolve
-
+IP-CIDR, 28.0.0.1/8 // Clash.meta's Fake IP
+IP-CIDR, 198.18.0.1/16 // Clash.meta's Fake IP
+IP-CIDR, 198.18.0.0/15 // sing-box's Fake IP
+IP-CIDR6, fc00::/18 // sing-box's Fake IP
 # ---(Apple)---
 DOMAIN-SUFFIX, aaplimg.com
 DOMAIN-SUFFIX, apple-cloudkit.com
@@ -120,7 +127,7 @@ DOMAIN-SUFFIX, girigirilove.com
 DOMAIN-SUFFIX, agedm.org
 # ---(Emby)---
 # > HXD
-DOMAIN-SUFFIX, bili.rip
+#DOMAIN-SUFFIX, bili.rip
 # > LOS
 DOMAIN-SUFFIX, xmsl.org
 DOMAIN-KEYWORD, loseremby
