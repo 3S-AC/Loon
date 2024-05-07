@@ -127,7 +127,9 @@ DOMAIN-SUFFIX, girigirilove.com
 DOMAIN-SUFFIX, agedm.org
 # ---(Emby)---
 # > HXD
-#DOMAIN-SUFFIX, bili.rip
+DOMAIN, cdn.bili.rip
+DOMAIN, cf.bili.rip
+DOMAIN, bili.bili.rip
 # > LOS
 DOMAIN-SUFFIX, xmsl.org
 DOMAIN-KEYWORD, loseremby
