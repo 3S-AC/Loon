@@ -8,7 +8,7 @@
 
 [Rewrite]
 # 飞客茶馆
-^https?:\/\/www\.flyert\.com\/.*\.php\?module=advis url reject-dict
+^https?:\/\/www\.flyert\.com\/.*\.php\?module=advis reject-dict
 [Script]
 # 飞客
 http-response ^https?:\/\/www\.flyert\.com\/.*plugin script-path = https://raw.githubusercontent.com/zirawell/app_remove_ads/main/All/js/flyert.js, requires-body = true, tag = 移除飞客广告
