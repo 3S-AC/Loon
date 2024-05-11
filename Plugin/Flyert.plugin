@@ -8,13 +8,9 @@
 
 [Rewrite]
 # 飞客茶馆
-^https?:\/\/ptf\.flyertrip\.com\/common\/cf\/.*.jpg reject-200
-^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=advis reject
-^https?:\/\/www\.flyert\.com\/source\/plugin\/mobile\/mobile\.php\?module=advis.* reject
-
+^https?:\/\/www\.flyert\.com\/.*\.php\?module=advis url reject-dict
 [Script]
 # 飞客
-http-response ^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1 script-path = https://raw.githubusercontent.com/3S-AC/Script/main/feike.js, requires-body = true, tag = 移除飞客广告
-
+http-response ^https?:\/\/www\.flyert\.com\/.*plugin script-path = https://raw.githubusercontent.com/zirawell/app_remove_ads/main/All/js/flyert.js, requires-body = true, tag = 移除飞客广告
 [Mitm]
-hostname = ptf.flyertrip.com, 47.100.65.202, www.flyert.com,
+hostname = www.flyert.com
