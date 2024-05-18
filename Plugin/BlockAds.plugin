@@ -68,10 +68,11 @@ DOMAIN, sdk.tianmu.mobi, REJECT
 DOMAIN-SUFFIX, shuzilm.cn, REJECT
 
 # 阿里巴巴
-DOMAIN, ossgw.alicdn.com, REJECT
 DOMAIN, ems.youku.com, REJECT
 DOMAIN, hudong.alicdn.com, REJECT
 DOMAIN-SUFFIX, ut.taobao.com, REJECT
+DOMAIN, dns.alidns.com, REJECT
+DOMAIN, ossgw.alicdn.com, REJECT
 
 # 腾讯
 DOMAIN, adsmind.gdtimg.com, REJECT
