@@ -13,7 +13,7 @@
 ^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=advis reject
 [Script]
 # 飞客
-http-response ^https?:\/\/www\.flyert\.com\/.*plugin script-path = https://raw.githubusercontent.com/zirawell/app_remove_ads/main/All/js/flyert.js, requires-body = true, tag = 移除飞客广告
+http-response ^https?:\/\/www\.flyert\.com\/.*plugin script-path = https://raw.githubusercontent.com/zirawell/Ad-Cleaner/main/Collection/js/flyert.js, requires-body = true, tag = 移除飞客广告
 http-response ^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1 script-path = https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/fly.js, requires-body = true, tag = 移除飞客广告
 [Script]
 [Mitm]
