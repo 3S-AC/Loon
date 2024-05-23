@@ -125,6 +125,12 @@ DOMAIN-SUFFIX, pkmkv.com
 # > 动漫
 DOMAIN-SUFFIX, girigirilove.com
 DOMAIN-SUFFIX, agedm.org
+# > 玩偶表哥
+DOMAIN-SUFFIX, wobge.run.goorm
+# > 独播库
+DOMAIN-KEYWORD, duboku
+# > libvio
+DOMAIN-KEYWORD, libvio
 # ---(Emby)---
 # > Music
 DOMAIN-SUFFIX, imetyou.top
