@@ -1,17 +1,16 @@
-#!name=去广告｜CMS
-#!desc=去除海外看、量子、非凡、暴风、快看资源插入式廣告
-#!openUrl = 
-#!author = Yswag
-#!homepage = https://github.com/3S-AC/Loon
-#!icon = https://raw.githubusercontent.com/3S-AC/Loon/main/Icon/CMSAds.png
-#!date = 2024-03-28 19:37:27
+#!name=视频去广告
+#!desc=去除海外看，量子，非凡的ts广告
+#!icon=https://raw.githubusercontent.com/fangkuia/XPTV/main/a1yt1-gx0qf-001.ico
+
+[URL Rewrite]
+# 暴風跑馬燈
+(^https?:\/\/s\d+\.bfengbf\.com\/video)(.+)_z5q\.ts $1$2.ts 302
 
 [Script]
-http-response ^https?:\/\/m3u\.haiwaikan\.com\/xm3u8\/(.+).m3u8 script-path = https://raw.githubusercontent.com/Yswag/for-own-use/main/js/cmsAdblock.js, requires-body = true, tag = 海外看去广告
-http-response ^https?:\/\/(v\.cdnlz\d+\.com|vip.*\.lz-cdn\d+\.com)\/(.+)\/hls\/(.+).m3u8 script-path = https://raw.githubusercontent.com/Yswag/for-own-use/main/js/cmsAdblock.js, requires-body = true,tag = 量子资源去广告
-http-response ^https?:\/\/(super|svipsvip|vip)\.ffzy[A-Za-z0-9-]+\.com\/(.+)\/hls\/(.+)\.m3u8 script-path = https://raw.githubusercontent.com/Yswag/for-own-use/main/js/cmsAdblock.js, requires-body = true, tag = 非凡资源去广告
-http-response ^https?:\/\/s\d+\.bfengbf\.com\/video\/(.+)\.m3u8 script-path = https://raw.githubusercontent.com/Yswag/for-own-use/main/js/cmsAdblock.js, requires-body = true,tag = 暴风资源去广告
-http-response ^https?:\/\/vip\.kuaikan-(cdn|play)\d+\.com\/.+\/hls\/.+\.m3u8 script-path = https://raw.githubusercontent.com/Yswag/for-own-use/main/js/cmsAdblock.js, requires-body = true,tag = 快看资源去广告
-
+http-response ^https?:\/\/(super|svipsvip|vip)\.ffzy[A-Za-z0-9-]+\.com\/(.+)\/hls\/(.+)\.m3u8 script-path=https://raw.githubusercontent.com/Yswag/for-own-use/main/js/cmsAdblock.js, requires-body=true, timeout=10, tag=非凡
+http-response ^https?:\/\/(v\.cdnlz\d+\.com|vip.*\.lz-cdn\d+\.com)\/(.+)\/hls\/(.+).m3u8 script-path=https://raw.githubusercontent.com/Yswag/for-own-use/main/js/cmsAdblock.js, requires-body=true, timeout=10, tag=量子
+http-response ^https?:\/\/m3u\.haiwaikan\.com\/xm3u8\/(.+).m3u8 script-path=https://raw.githubusercontent.com/Yswag/for-own-use/main/js/cmsAdblock.js, requires-body=true, timeout=10, tag=海外看
+http-response ^https?:\/\/s\d+\.bfengbf\.com\/video\/(.+)\.m3u8 script-path=https://raw.githubusercontent.com/Yswag/for-own-use/main/js/cmsAdblock.js, requires-body=true, timeout=10, tag=暴风
+http-response ^https?:\/\/vip\.kuaikan-cdn\d+\.com\/.+\/hls\/.+\.m3u8 script-path=https://raw.githubusercontent.com/Yswag/for-own-use/main/js/cmsAdblock.js, requires-body=true, timeout=10, tag=快看
 [MITM]
-hostname = m3u.haiwaikan.com, v.cdnlz*.com, vip*.lz-cdn*.com, *.ffzy*.com, s*.bfengbf.com, vip.kuaikan*.com
+hostname = %APPEND% m3u.haiwaikan.com, v.cdnlz*.com, vip*.lz-cdn*.com, *.ffzy*.com, s*.bfengbf.com, vip.kuaikan-cdn*.com
