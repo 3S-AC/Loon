@@ -68,19 +68,6 @@ IP-CIDR6, 2403:300:a42::/48, no-resolve
 IP-CIDR6, 2403:300:a51::/48, no-resolve
 IP-CIDR6, 2a01:b740:a42::/48, no-resolve
 
-# ---(Microsoft)---
-DOMAIN-SUFFIX, hotmail.com
-DOMAIN-SUFFIX, live.com
-DOMAIN-SUFFIX, live.net
-DOMAIN-SUFFIX, office.com
-DOMAIN-SUFFIX, office.net
-DOMAIN-SUFFIX, office365.com
-DOMAIN-SUFFIX, onedrive.com
-DOMAIN-SUFFIX, onenote.com
-DOMAIN-SUFFIX, onenote.net
-DOMAIN-SUFFIX, outlook.com
-DOMAIN-SUFFIX, outlookmobile.com
-
 # ---(XPTV)---
 # > Home
 DOMAIN-SUFFIX, infuseku.xyz
@@ -127,7 +114,6 @@ DOMAIN-SUFFIX, girigirilove.com
 DOMAIN-SUFFIX, agedm.org
 # > 玩偶表哥
 DOMAIN-SUFFIX, wobge.run.goorm
-# > 独播库
 # > libvio
 DOMAIN-KEYWORD, libvio
 # ---(Emby)---
