@@ -8,13 +8,10 @@
 
 [Rewrite]
 # 飞客茶馆
-^https?:\/\/www\.flyert\.com\/.*\.php\?module=advis reject-dict
-^https?:\/\/ptf\.flyertrip\.com\/common\/cf\/.*.jpg reject-200
-^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=advis reject
+^https?:\/\/www\.flyert\.com\/api\/mobile\/index\.php\?module=advis reject-200
+^https?:\/\/www\.flyert\.com\/source\/plugin\/mobile\/mobile\.php\?module=advis reject-200
 [Script]
 # 飞客
-http-response ^https?:\/\/www\.flyert\.com\/.*plugin script-path = https://raw.githubusercontent.com/zirawell/Ad-Cleaner/main/Collection/js/flyert.js, requires-body = true, tag = 移除飞客广告
-http-response ^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1 script-path = https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/fly.js, requires-body = true, tag = 移除飞客广告
-[Script]
+http-response ^https?:\/\/www\.flyert\.com\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1 script-path =  https://github.com/ddgksf2013/Scripts/raw/master/fly.js, requires-body = true, tag = 移除飞客广告
 [Mitm]
-hostname = www.flyert.com, 47.100.65.202, ptf.flyertrip.com
+hostname = www.flyert.com
