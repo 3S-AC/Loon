@@ -68,54 +68,6 @@ IP-CIDR6, 2403:300:a42::/48, no-resolve
 IP-CIDR6, 2403:300:a51::/48, no-resolve
 IP-CIDR6, 2a01:b740:a42::/48, no-resolve
 
-# ---(XPTV)---
-# > Home
-DOMAIN-SUFFIX, infuseku.xyz
-# > 量子资源
-DOMAIN-SUFFIX, lziapi.com
-DOMAIN-KEYWORD, lz-cdn
-DOMAIN-KEYWORD, cdnlz
-# > 非凡资源
-DOMAIN-KEYWORD, vip.ffzy
-DOMAIN-KEYWORD, super.ffzy
-# > 快看资源
-DOMAIN-KEYWORD, vip.kuaikan
-DOMAIN-SUFFIX, kuaikanzy.net
-# > 暴风资源
-DOMAIN-KEYWORD, bfengbf.com
-# > 玩偶哥哥
-DOMAIN-SUFFIX, wogg.xyz
-DOMAIN-SUFFIX, wogg.link
-# > JOJO
-DOMAIN-SUFFIX, jiohub.top
-# > 阿里小站
-DOMAIN-SUFFIX, pan666.net
-# > 云盘资源
-DOMAIN-KEYWORD, yunpan1
-# > 在线之家
-DOMAIN-SUFFIX, zxzja.com
-DOMAIN-SUFFIX, zxzj.pro
-DOMAIN-SUFFIX, zxzjhd.com
-# > 低端影视
-DOMAIN-SUFFIX, ddys.pro
-DOMAIN-SUFFIX, ddys.mov
-# > 厂长资源
-DOMAIN-KEYWORD, czzy
-DOMAIN-KEYWORD, czys
-# > 哔嘀影视
-DOMAIN-KEYWORD, bdys
-DOMAIN-KEYWORD, yjys
-# > 种子短剧
-DOMAIN-SUFFIX, zzdj.cc
-# > 七味
-DOMAIN-SUFFIX, pkmkv.com
-# > 动漫
-DOMAIN-SUFFIX, girigirilove.com
-DOMAIN-SUFFIX, agedm.org
-# > 玩偶表哥
-DOMAIN-SUFFIX, wobge.run.goorm
-# > libvio
-DOMAIN-KEYWORD, libvio
 # ---(Emby)---
 # > Music
 DOMAIN-SUFFIX, imetyou.top
