@@ -187,6 +187,7 @@ DOMAIN, api.aliyundrive.com, DIRECT
 DOMAIN-SUFFIX, doubanio.com, DIRECT
 #同步数据
 DOMAIN, gateway.icloud.com, DIRECT
+DOMAIN-SUFFIX, infuseku.xyz, DIRECT
 #杂七杂八的播放
 DOMAIN-SUFFIX, olemovienews.com, DIRECT
 DOMAIN-KEYWORD, ghw9zwp5, DIRECT
@@ -216,6 +217,8 @@ DOMAIN, qchannelvideo.photo.qq.com, DIRECT
 DOMAIN, sf16-sg.larksuitecdn.com, DIRECT
 DOMAIN, op.xn--it-if7c19g5s4bps5c.com, DIRECT
 DOMAIN, tjdownload.pan.wo.cn, DIRECT
+DOMAIN-SUFFIX, kmeiju.cc, DIRECT
+DOMAIN-SUFFIX, anfuns.cc, DIRECT
 DOMAIN-SUFFIX, nkvod.com, DIRECT
 DOMAIN-SUFFIX, 13to.com, DIRECT
 DOMAIN-KEYWORD, thehanju, DIRECT
