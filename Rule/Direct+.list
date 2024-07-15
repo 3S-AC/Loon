@@ -175,6 +175,9 @@ DOMAIN, wxsnsencsvp.wxs.qq.com, DIRECT
 DOMAIN-SUFFIX, ibytedtos.com, DIRECT
 DOMAIN-SUFFIX, toutiao50.com, DIRECT
 DOMAIN-SUFFIX, ibyteimg.com, DIRECT
+DOMAIN-KEYWORD, yjys, DIRECT
+#LIBVIO
+DOMAIN-SUFFIX, libvio.cc, DIRECT
 #网盘播放
 DOMAIN-KEYWORD, quark, DIRECT
 DOMAIN, drive-pc.quark.cn, DIRECT
@@ -189,6 +192,14 @@ DOMAIN-SUFFIX, doubanio.com, DIRECT
 DOMAIN, gateway.icloud.com, DIRECT
 DOMAIN-SUFFIX, infuseku.xyz, DIRECT
 #杂七杂八的播放
+DOMAIN-KEYWORD, ghw9zwp5, DIRECT
+DOMAIN-KEYWORD, zeqaht.com, DIRECT
+DOMAIN-SUFFIX, ywxohs.com, DIRECT
+DOMAIN-SUFFIX, miyoushe.com, DIRECT
+DOMAIN-KEYWORD, media-oss, DIRECT
+DOMAIN-SUFFIX, netease.com, DIRECT
+DOMAIN-SUFFIX, aliyuncs.com, DIRECT
+DOMAIN-SUFFIX, xmcdn.com, DIRECT
 DOMAIN-SUFFIX, olemovienews.com, DIRECT
 DOMAIN-KEYWORD, ghw9zwp5, DIRECT
 DOMAIN-SUFFIX, ywxohs.com, DIRECT
