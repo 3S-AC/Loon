@@ -178,23 +178,12 @@ DOMAIN-SUFFIX, ibyteimg.com, DIRECT
 DOMAIN-KEYWORD, yjys, DIRECT
 #LIBVIO
 DOMAIN-SUFFIX, libvio.cc, DIRECT
-#网盘播放
-DOMAIN-KEYWORD, quark, DIRECT
-DOMAIN, drive-pc.quark.cn, DIRECT
-DOMAIN-SUFFIX, aliyundrive.asia, DIRECT
-DOMAIN-SUFFIX, alicloudccp.com, DIRECT
-DOMAIN, openapi.aliyundrive.com, DIRECT
-DOMAIN, auth.aliyundrive.com, DIRECT
-DOMAIN, api.aliyundrive.com, DIRECT
-#豆瓣封面
-DOMAIN-SUFFIX, doubanio.com, DIRECT
-#同步数据
-DOMAIN, gateway.icloud.com, DIRECT
+#主页
 DOMAIN-SUFFIX, infuseku.xyz, DIRECT
 #杂七杂八的播放
-DOMAIN-SUFFIX, olemovienews.com, DIRECT
+#DOMAIN-SUFFIX, olemovienews.com, DIRECT
 DOMAIN-KEYWORD, ghw9zwp5, DIRECT
-DOMAIN-SUFFIX, ywxohs.com, DIRECT
+DOMAIN-SUFFIX, ywxohs.com, DIRECTfi
 DOMAIN-SUFFIX, miyoushe.com, DIRECT
 DOMAIN-KEYWORD, media-oss, DIRECT
 DOMAIN-SUFFIX, netease.com, DIRECT
