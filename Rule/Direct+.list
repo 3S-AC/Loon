@@ -68,6 +68,9 @@ IP-CIDR6, 2403:300:a42::/48, no-resolve
 IP-CIDR6, 2403:300:a51::/48, no-resolve
 IP-CIDR6, 2a01:b740:a42::/48, no-resolve
 # ---(XPTV)—--
+#Yealico
+DOMAIN-SUFFIX, mxdmp.com, DIRECT
+DOMAIN-SUFFIX, keke1.app, DIRECT
 #玩偶哥哥（直连）
 DOMAIN-KEYWORD, wogg, DIRECT
 DOMAIN-SUFFIX, wogg.link, DIRECT
@@ -178,7 +181,9 @@ DOMAIN-SUFFIX, ibyteimg.com, DIRECT
 DOMAIN-KEYWORD, yjys, DIRECT
 #LIBVIO
 DOMAIN-SUFFIX, libvio.cc, DIRECT
-#主页
+#豆瓣封面
+DOMAIN-SUFFIX, doubanio.com, DIRECT
+#同步数据
 DOMAIN-SUFFIX, infuseku.xyz, DIRECT
 #杂七杂八的播放
 #DOMAIN-SUFFIX, olemovienews.com, DIRECT
