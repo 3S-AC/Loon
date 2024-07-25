@@ -169,6 +169,8 @@ DOMAIN-KEYWORD, hanjukankan
 DOMAIN-SUFFIX, agedm.org
 DOMAIN-SUFFIX, age.tv
 DOMAIN-SUFFIX, agefans.com
+# ギリギリ动漫
+DOMAIN-SUFFIX, girigirilove.com
 # AnFuns动漫
 DOMAIN-SUFFIX, anfuns.org
 # timi芒果TV
@@ -282,8 +284,8 @@ DOMAIN, pub1.emby.wtf
 DOMAIN, pub2.emby.wtf
 DOMAIN, pub3.emby.wtf
 # HXD
-DOMAIN-SUFFIX,hxd.as174.com
-DOMAIN-SUFFIX,bili.rip
+DOMAIN-SUFFIX, hxd.as174.com
+DOMAIN-SUFFIX, bili.rip
 
 #豆瓣封面
 DOMAIN-SUFFIX, doubanio.com
