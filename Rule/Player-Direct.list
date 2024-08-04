@@ -1,5 +1,5 @@
 # 影视播放规则(直连)
-# 2024-07-23 23:00
+# 2024-08-03 07:00
 
 # CMSPlayer
 # 低端影视
@@ -181,6 +181,8 @@ DOMAIN-SUFFIX, duanjutt.tv
 DOMAIN-KEYWORD, duanjutt
 # dsakf23665
 DOMAIN-SUFFIX, dsakf23665.com
+# NO视频
+DOMAIN-SUFFIX, novipnoad.net
 # 厂长资源
 DOMAIN-SUFFIX, czzy.site
 DOMAIN-SUFFIX, czys.top
@@ -265,10 +267,12 @@ DOMAIN, wxsnsencsvp.wxs.qq.com
 ;DOMAIN-SUFFIX, chun.imetyou.top
 # TreeDiagram
 DOMAIN-SUFFIX, 789.123456.al
-# Nya Media
+# NyaMedia
 DOMAIN-SUFFIX, emby.bangumi.ca
 # 纸片人
 DOMAIN-SUFFIX, embyplus.org
+# 大V影院
+DOMAIN, su.viclub.top
 # 垃圾影音
 DOMAIN, cf.xmsl.org
 DOMAIN, cf.emby.moe
@@ -286,10 +290,21 @@ DOMAIN, pub3.emby.wtf
 # HXD
 DOMAIN-SUFFIX, hxd.as174.com
 DOMAIN-SUFFIX, bili.rip
+# yomo服不服
+DOMAIN, yomo.7777777.buzz
 
 #豆瓣封面
 DOMAIN-SUFFIX, doubanio.com
 #杂七杂八的播放
+DOMAIN-SUFFIX, mediap.svc.ms
+DOMAIN-SUFFIX, yangkeduo.com
+DOMAIN-KEYWORD, ts.com
+DOMAIN, yk7ynj4ts.com
+DOMAIN, r8qgyo0ts.com
+DOMAIN, 9t5af8lts.com
+DOMAIN, d4y3409ts.com
+DOMAIN, 3zj55vots.com
+DOMAIN-SUFFIX, m3u8.girigirilove.com
 DOMAIN-SUFFIX, cloudflarestorage.com
 DOMAIN-SUFFIX, ho7k.com
 DOMAIN-SUFFIX, dsakf23665.com
