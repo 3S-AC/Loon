@@ -274,40 +274,17 @@ DOMAIN-SUFFIX, ctyunxs.cn
 DOMAIN, wxsnsencsvp.wxs.qq.com
 
 # Emby
-# Paul
-;DOMAIN-SUFFIX, cf.imetyou.top
-;DOMAIN-SUFFIX, emby.imetyou.top
-;DOMAIN-SUFFIX, fk.imetyou.top
-;DOMAIN-SUFFIX, kr.imetyou.top
-;DOMAIN-SUFFIX, sg.imetyou.top
-;DOMAIN-SUFFIX, chun.imetyou.top
 # TreeDiagram
 DOMAIN-SUFFIX, 789.123456.al
-# NyaMedia
-DOMAIN-SUFFIX, emby.bangumi.ca
 # 纸片人
 DOMAIN-SUFFIX, embyplus.org
-# 大V影院
-DOMAIN, su.viclub.top
 # 垃圾影音
 DOMAIN, cf.xmsl.org
 DOMAIN, cf.emby.moe
-# 普拉斯影业
-DOMAIN, emby-best.xeton.dev
 # 叔服
 DOMAIN-SUFFIX, mcjoker.xyz
-# MisakaF
-DOMAIN, cdn.misakaf.org
-DOMAIN-SUFFIX, cloudfront.net
-# 终点站
-DOMAIN, pub1.emby.wtf
-DOMAIN, pub2.emby.wtf
-DOMAIN, pub3.emby.wtf
 # HXD
-DOMAIN-SUFFIX, as174.com
 DOMAIN-SUFFIX, bili.rip
-# yomo服不服
-DOMAIN, yomo.7777777.buzz
 
 #豆瓣封面
 DOMAIN-SUFFIX, doubanio.com
