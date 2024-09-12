@@ -138,6 +138,10 @@ DOMAIN-SUFFIX, wangyoung.com
 # XPTV
 # 探索页
 DOMAIN-SUFFIX, infuseku.xyz
+# 4k-av
+DOMAIN-SUFFIX, 4k-av.com
+# 金牌影院
+DOMAIN-SUFFIX, cfkj86.com
 # BILFUN
 DOMAIN-SUFFIX, bilfun.cc
 # 小苹果
@@ -290,6 +294,8 @@ DOMAIN-SUFFIX, bili.rip
 #豆瓣封面
 DOMAIN-SUFFIX, doubanio.com
 #杂七杂八的播放
+DOMAIN-SUFFIX, 4k-av.com
+DOMAIN, ppvod01.blbtgg.com
 DOMAIN-SUFFIX, zaqohu.com
 DOMAIN-SUFFIX, xjqxz.top
 DOMAIN-SUFFIX, wjm.xpgtv.net
