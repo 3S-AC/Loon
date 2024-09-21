@@ -147,8 +147,9 @@ DOMAIN-SUFFIX, cfkj86.com
 # BILFUN
 DOMAIN-SUFFIX, bilfun.cc
 # 小苹果
-DOMAIN, tipu.xjqxz.top
-DOMAIN, item.xpgtv.xyz
+DOMAIN-SUFFIX, xjqxz.top
+DOMAIN-SUFFIX, xpgtv.xyz
+DOMAIN-SUFFIX, xpgtv.net
 # 瓜子影视
 DOMAIN, api.zaqohu.com
 # 星芽短剧
