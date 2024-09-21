@@ -140,8 +140,6 @@ DOMAIN-SUFFIX, wangyoung.com
 DOMAIN-SUFFIX, infuseku.xyz
 # 天天影视
 DOMAIN, op.ysdqjs.cn
-# 爱壹帆
-DOMAIN-SUFFIX, iyf.tv
 # 4k-av
 DOMAIN-SUFFIX, 4k-av.com
 # 金牌影院
@@ -155,17 +153,8 @@ DOMAIN, item.xpgtv.xyz
 DOMAIN, api.zaqohu.com
 # 星芽短剧
 DOMAIN, app.whjzjx.cn
-# 两个BT
-DOMAIN-SUFFIX, bttwo.org
-DOMAIN-SUFFIX, bttwoo.com
-DOMAIN-SUFFIX, bttwo.vip
 # 耐看点播
 DOMAIN-SUFFIX, nkvod.com
-# 烧火电影
-DOMAIN-SUFFIX, saohuo.tv
-DOMAIN-SUFFIX, saohuo.us
-DOMAIN-SUFFIX, shdy2.com
-DOMAIN-KEYWORD, saohuo
 # 素白白影院
 DOMAIN-SUFFIX, subaibai.vip
 DOMAIN-SUFFIX, subaibai.com
@@ -193,9 +182,6 @@ DOMAIN-SUFFIX, anfuns.org
 # timi芒果TV
 DOMAIN-SUFFIX, mgtv.com
 DOMAIN-KEYWORD, timizy
-# 短剧天堂
-DOMAIN-SUFFIX, duanjutt.tv
-DOMAIN-KEYWORD, duanjutt
 # dsakf23665
 DOMAIN-SUFFIX, dsakf23665.com
 # NO视频
