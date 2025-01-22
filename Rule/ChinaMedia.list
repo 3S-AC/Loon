@@ -1,8 +1,3 @@
-# 影视播放规则(直连)
-# 2024-11-20 12:00
-DOMAIN, hxd.as174.de
-DOMAIN, cf.bili.rip
-DOMAIN, emby3.mcjoker.xyz
 # CMSPlayer
 #已标注了大部分可直连的地址,遇到无法直连的情况自行调整
 #XPTV主站-部分地区可以直连自行尝试
