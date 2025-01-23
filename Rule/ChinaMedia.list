@@ -15,7 +15,7 @@ DOMAIN, dandanplay.net
 
 #VOD源
 #金牌影院
-DOMAIN, m.cfkj86.com
+DOMAIN-SUFFIX, cfkj86.com
 #播放
 DOMAIN-KEYWORD, ppvod
 #低端主页与播放
