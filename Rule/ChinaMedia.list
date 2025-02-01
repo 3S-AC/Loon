@@ -14,6 +14,10 @@ DOMAIN, image.tmdb.org
 DOMAIN, dandanplay.net
 
 #VOD源
+#影视天堂
+DOMAIN, ysttv.com
+#播放
+DOMAIN-SUFFIX, 7dgirl.org
 #金牌影院
 DOMAIN-SUFFIX, cfkj86.com
 #播放
