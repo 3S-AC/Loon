@@ -14,6 +14,8 @@ DOMAIN, image.tmdb.org
 DOMAIN, dandanplay.net
 
 #VOD源
+#小苹果
+DOMAIN-KEYWORD, xpgtv
 #影视天堂
 DOMAIN, ysttv.com
 #播放
