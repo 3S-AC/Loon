@@ -13,6 +13,28 @@ DOMAIN, image.tmdb.org
 #弹幕
 DOMAIN, dandanplay.net
 
+#网盘源
+#小米
+DOMAIN, mihdr.top, DIRECT
+#木偶
+DOMAIN-SUFFIX, mogg.top, DIRECT
+#玩偶
+DOMAIN-SUFFIX, wogg.net, DIRECT
+#雷鲸
+DOMAIN, www.leijing.xyz, DIRECT
+#校长
+DOMAIN, xzys.fun, DIRECT
+#蜡笔
+DOMAIN-SUFFIX, duopan.fun, DIRECT
+#南风
+DOMAIN, www.nanf.cc, DIRECT
+#多多
+DOMAIN, yydsys.top, DIRECT
+#欧歌
+DOMAIN, woog.nxog.eu.org, DIRECT
+#云盘吧
+DOMAIN, yunpan8.cc, DIRECT
+
 #VOD源
 #小苹果
 DOMAIN-KEYWORD, xpgtv
