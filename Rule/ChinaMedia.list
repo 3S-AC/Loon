@@ -1,10 +1,14 @@
-# CMSPlayer
-#已标注了大部分可直连的地址,遇到无法直连的情况自行调整
-#XPTV主站-部分地区可以直连自行尝试
+#Emby服务
+#墨白
+DOMAIN, 2pfdml.mobaiemby.site
+#HXD
+DOMAIN, hxd.as174.de
+#July
+DOMAIN, sxiaolong-my.sharepoint.com
+
+# XPTV服务
+#XPTV主站
 DOMAIN, infuseku.xyz
-#iCloud同步
-DOMAIN, gateway.icloud.com
-DOMAIN, metrics.icloud.com
 #XPTV封面来源
 #小海报
 DOMAIN-SUFFIX, doubanio.com
@@ -15,25 +19,25 @@ DOMAIN, dandanplay.net
 
 #网盘源
 #小米
-DOMAIN, mihdr.top, DIRECT
+DOMAIN, mihdr.top
 #木偶
-DOMAIN-SUFFIX, mogg.top, DIRECT
+DOMAIN-SUFFIX, mogg.top
 #玩偶
-DOMAIN-SUFFIX, wogg.net, DIRECT
+DOMAIN-SUFFIX, wogg.net
 #雷鲸
-DOMAIN, www.leijing.xyz, DIRECT
+DOMAIN, www.leijing.xyz
 #校长
-DOMAIN, xzys.fun, DIRECT
+DOMAIN, xzys.fun
 #蜡笔
-DOMAIN-SUFFIX, duopan.fun, DIRECT
+DOMAIN-SUFFIX, duopan.fun
 #南风
-DOMAIN, www.nanf.cc, DIRECT
+DOMAIN, www.nanf.cc
 #多多
-DOMAIN, yydsys.top, DIRECT
+DOMAIN, yydsys.top
 #欧歌
-DOMAIN, woog.nxog.eu.org, DIRECT
+DOMAIN, woog.nxog.eu.org
 #云盘吧
-DOMAIN, yunpan8.cc, DIRECT
+DOMAIN, yunpan8.cc
 
 #VOD源
 #小苹果
