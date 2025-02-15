@@ -103,17 +103,75 @@ DOMAIN, dc.xhscdn.com
 DOMAIN, mdn.alipayobjects.com
 #天天主页
 DOMAIN, op.ysdqjs.cn
-#在线之家主页--播放地址是ctyunxs.cn,在天翼里有
+#在线之家主页
 DOMAIN-SUFFIX, zxzja.com
 #播放
 DOMAIN-SUFFIX, ctyunxs.cn
-#素白白主页--播放地址是dc.xhscdn.com,在厂长里有
+#素白白主页
 DOMAIN, www.subaibaiys.com
 #播放
 DOMAIN, dc.xhscdn.com
 DOMAIN-SUFFIX, wangchuanxin.top
 
 #CMS源
+# 私密影院
+DOMAIN-SUFFIX, simiyy.com
+# 奈飞工厂
+DOMAIN-SUFFIX, netflixgc.com
+# 天空资源
+DOMAIN-SUFFIX, tiankongapi.com
+DOMAIN-SUFFIX, huishij.com
+# 飞速资源
+DOMAIN-SUFFIX, feisuzyapi.com
+DOMAIN-SUFFIX, feisuimg.com
+# 光速资源
+DOMAIN-SUFFIX, guangsuapi.com
+DOMAIN-SUFFIX, guangsuimage.com
+# 百度云资源
+DOMAIN-SUFFIX, apibdzy.com
+DOMAIN-SUFFIX, bdzyimg.com
+# ck资源
+DOMAIN-SUFFIX, ckzy.me
+# 火狐资源
+DOMAIN-SUFFIX, hhzyapi.com
+DOMAIN-SUFFIX, hhmage.com
+# 四圈资源
+DOMAIN-SUFFIX, fenwe078.cf
+# 快看资源
+DOMAIN-SUFFIX, kuaikan-api.com
+DOMAIN-SUFFIX, kuaikanzy.net
+# 可可资源
+DOMAIN-SUFFIX, kekezyapi.com
+# 39影视
+DOMAIN-SUFFIX, 39kan.com
+DOMAIN-SUFFIX, 394tv.com
+# 步步高资源
+DOMAIN-SUFFIX, yparse.com
+# 飘花影院
+DOMAIN-SUFFIX, ahjiuman.com
+DOMAIN-SUFFIX, youkuphoto.com
+# 乐视资源
+DOMAIN-SUFFIX, leshizyapi.com
+# 奇虎资源
+DOMAIN-SUFFIX, qhzyapi.com
+# 享看资源
+DOMAIN-SUFFIX, xkanzy10.com
+# 快云资源
+DOMAIN-SUFFIX, kuaiyunzy.com
+# 二次萌影视
+DOMAIN-SUFFIX, ecmys.com
+DOMAIN-SUFFIX, ecmys.top
+DOMAIN-SUFFIX, ecmys.cc
+# 影视猫
+DOMAIN, ysm.tkbot.fun
+DOMAIN-SUFFIX, tkbot.fun
+# TIMI蓝光
+DOMAIN-SUFFIX, zyz.ikum.cc
+# 4K电影馆
+DOMAIN-SUFFIX, 4kdyg.vip
+DOMAIN-SUFFIX, 4kdyg.com
+DOMAIN-SUFFIX, 4kdyg.top
+DOMAIN-SUFFIX, wangyoung.com
 #360主页
 DOMAIN, 360zy.com
 #播放
