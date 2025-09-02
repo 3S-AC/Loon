@@ -1,4 +1,7 @@
-
+DOMAIN, hxd.as174.de, DIRECT
+DOMAIN, cdn.as174.de, DIRECT
+DOMAIN, cf.bili.rip, DIRECT
+DOMAIN, emby.as174.de, DIRECT
 #iCloud同步
 DOMAIN, gateway.icloud.com, DIRECT
 DOMAIN, metrics.icloud.com, DIRECT
