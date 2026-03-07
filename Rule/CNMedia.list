@@ -75,20 +75,104 @@ DOMAIN-SUFFIX, doubanio.com
 DOMAIN, dandanplay.net
 
 # 网盘规则
-# 阿里
-DOMAIN-SUFFIX, aliyundrive.com
-DOMAIN-SUFFIX, voicehub.top
-# 夸克
-DOMAIN-SUFFIX, quark.cn
-# 天翼
-DOMAIN-SUFFIX, 189.cn
-DOMAIN-SUFFIX, ctyunxs.cn
-# 115
-DOMAIN-SUFFIX, 115.com
-# UC
-DOMAIN-SUFFIX, uc.cn
-# 小雅
-DOMAIN-SUFFIX, xiaoya.pro
+#115
+DOMAIN,fhnfile.oss-cn-shenzhen.aliyuncs.com
+DOMAIN-SUFFIX,115.com
+DOMAIN-SUFFIX,115cdn.com
+DOMAIN-SUFFIX,115cdn.net
+DOMAIN-SUFFIX,115img.com
+DOMAIN-SUFFIX,116cd.cn
+DOMAIN-SUFFIX,116cd.com
+DOMAIN-SUFFIX,116cd.net
+DOMAIN-SUFFIX,anxia.com
+DOMAIN-SUFFIX,sq.cc
+
+#阿里/夸克/UC
+DOMAIN,cf.aliyun.com
+DOMAIN,ynuf.aliapp.org
+DOMAIN-SUFFIX,alipan.com
+DOMAIN-SUFFIX,alicdn.com
+DOMAIN-SUFFIX,aliyundrive.com
+DOMAIN-SUFFIX,aliyundrive.net
+DOMAIN-SUFFIX,alibaba.com
+DOMAIN-SUFFIX,quark.cn
+DOMAIN-SUFFIX,uc.cn
+DOMAIN-SUFFIX,taobao.com
+DOMAIN-SUFFIX,aliyuncs.com
+
+#百度
+DOMAIN,himg.bdimg.com
+DOMAIN,staticiot.cdn.bcebos.com
+DOMAIN,thumbnail0.baidupcs.com
+DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,bdstatic.com
+
+#天翼
+DOMAIN,ux.21cn.com
+DOMAIN-SUFFIX,189.cn
+DOMAIN-SUFFIX,dlife.cn
+
+#迅雷
+DOMAIN,static.xbase.cloud
+DOMAIN-SUFFIX,xunlei.com
+DOMAIN-SUFFIX,a.88cdn.com
+
+#123
+DOMAIN,www.123912.com
+DOMAIN,www.123295.com
+DOMAIN,www.123865.com
+DOMAIN-SUFFIX,cjjd19.com
+DOMAIN-SUFFIX,123pan.com
+DOMAIN-SUFFIX,cnzz.com
+
+#移动云盘
+DOMAIN-SUFFIX,cmicapm.com
+DOMAIN-SUFFIX,10086.cn
+DOMAIN-SUFFIX,139.com
+DOMAIN-SUFFIX,cmecloud.cn
+
+#玩偶哥哥
+DOMAIN-KEYWORD,wogg
+
+#木偶
+DOMAIN,666.666291.xyz
+DOMAIN,www.muou.asia
+DOMAIN,www.muou.site
+
+#蜡笔
+DOMAIN,fmao.shop
+
+#至臻
+DOMAIN,www.miqk.cc
+DOMAIN,xiaomi666.fun
+DOMAIN-SUFFIX,mihdr.top
+
+#多多
+DOMAIN,tv.214521.xyz
+DOMAIN,duo.hidns.vip
+DOMAIN-KEYWORD,yydsys
+
+#二小
+DOMAIN,wexwp.cc
+DOMAIN-SUFFIX,2xiaopan.fun
+DOMAIN-SUFFIX,erxiaopan.fun
+DOMAIN-SUFFIX,xhww.net
+DOMAIN-KEYWORD,erxiaofn
+
+#虎斑
+DOMAIN,xhban.xyz
+IP-CIDR,154.222.27.33/32,no-resolve
+IP-CIDR,103.45.162.207/32,no-resolve
+
+#小斑
+DOMAIN,xsayang.fun
+IP-CIDR,154.201.83.50/32,no-resolve
+
+#欧歌
+DOMAIN,woog.nxog.eu.org
+
+#闪电
+DOMAIN,sd.sduc.site
 
 # 网盘源
 # 双子星Star2
