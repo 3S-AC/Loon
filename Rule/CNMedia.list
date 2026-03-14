@@ -153,9 +153,9 @@ DOMAIN,duo.hidns.vip
 DOMAIN-KEYWORD,yydsys
 
 #二小
-DOMAIN,zhizhen1.top
 DOMAIN-KEYWORD,2xiaopan
 DOMAIN-KEYWORD,erxiaopan
+DOMAIN-KEYWORD,2xiaozhan
 DOMAIN-KEYWORD,wexwp
 
 #虎斑
@@ -244,8 +244,7 @@ DOMAIN-SUFFIX, xinxinysju.cc
 # Catflix
 DOMAIN-SUFFIX, catflix.su
 # LIBVIO
-DOMAIN-SUFFIX, libvio.site
-DOMAIN-SUFFIX, libvio.cc
+DOMAIN-KEYWORD, libvio
 # NO視頻
 DOMAIN-SUFFIX, novipnoad.net
 # 嗷呜动漫
