@@ -177,7 +177,7 @@ DOMAIN,sd.sduc.site
 # 双子星Star2
 DOMAIN-SUFFIX, star2.cn
 # SeedHub
-DOMAIN-SUFFIX, seedhub.cc
+#DOMAIN-SUFFIX, seedhub.cc
 # 奥秘影视
 DOMAIN, vip.omii.top
 # 白嫖分享
