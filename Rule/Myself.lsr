@@ -27,9 +27,8 @@ DOMAIN-KEYWORD, els-cdn
 DOMAIN-KEYWORD, sci-hub
 
 ## Emby
-DOMAIN, cf.bili.rip
-DOMAIN, hxd.as174.de
-DOMAIN, emby.as174.de
+DOMAIN-SUFFIX, as174.de
+DOMAIN-KEYWORD, yusen
 
 ## CMSPlayer
 # 私密影院
